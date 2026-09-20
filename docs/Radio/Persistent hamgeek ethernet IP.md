@@ -14,7 +14,9 @@ parent: Radio
 
 # Preamble 
 
-When using a HamGeek (Pluto) SDR directly with an Ethernet cable, you will quickly discover that the interface IP does not automatically configure, forcing you to have to SSH into the SDR using the debug USB port every time you restart it to configure it using `ifconfig`. This guide will help you automatically configure the Ethernet IP.
+When using a HamGeek (Pluto) SDR with an Ethernet cable plugged directly into your computer with no DHCP server functionality, you will quickly discover that the SDR doesn't configure a default IP. This forces you to SSH into the SDR using the debug JTAG USB port every time you restart it to configure it using `ifconfig`. As an additional thorn in the side, the rootfs is not persistent between reboots - it is loaded from a read-only blob on the SD card on every boot.
+
+This guide will help you automatically configure the Ethernet IP by adjusting the rootfs blob to include statements to set the IPv4 address to a custom value.
 
 # Extracting the rootfs
 
@@ -37,9 +39,10 @@ You can now create a `rootfs` directory and extract the contents of the initramf
 mkdir rootfs && cd rootfs
 sudo sh -c "gunzip -c ../initramfs.gz | cpio -idmv"
 ```
+We now have access to the rootfs which can be modified as you wish. 
 
 # Adjusting the IP
-Adjust as you wish. For a persistent IP, edit the following file:
+To have the IP configure itself to the default from the official instructions, edit the following file:
 
 
 ```diff
@@ -53,7 +56,7 @@ Adjust as you wish. For a persistent IP, edit the following file:
 +   ETH_GW=`fw_printenv -n gateway_eth 2> /dev/null || echo 192.168.1.1 | tr -cd '[a-zA-Z0-9]._-'`
 ```
 
-This sets the gateway to `192.168.1.1` and SDR IP to `192.168.1.10`, as per the official instructions. You can replace it with custom values.
+This sets the gateway to `192.168.1.1` and SDR IP to `192.168.1.10` as per the official instructions. You can replace these with custom values if you wish so.
 
 # Repack rootfs
 
@@ -72,7 +75,7 @@ mkimage -A arm -O linux -T ramdisk -C gzip -n "PlutoSDR ramdisk" -d initramfs.gz
 
 The new image is now in the current directory as `uramdisk.image.gz`. You can copy it over to the SD card, replacing the old one
 
-You're done! Upon restart, the SDR should automatically configure with the IP 192.168.1.10 and 192.168.1.1 as the gateway.
+You're done! Upon restart, the SDR should automatically configure with the IP 192.168.1.10 and 192.168.1.1 as the gateway on the Ethernet interface.
 
 
 > Note: When connecting directly to the SDR, you should configure your computer's Ethernet interface to use 192.168.1.99 for the address and 192.168.1.1 for the gateway, as per the official HamGeek guide.
