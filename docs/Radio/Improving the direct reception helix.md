@@ -209,7 +209,7 @@ Potential solutions include:
 
 The helix plate has to be detached from the scaffold while installing the big ground plane. This might introduce unwanted stress on the SMA soldering. As mentioned earlier, potential solutions are:
 
-- Using a permanent screw to hold the scaffold in place. As long as it is flat with the ground plane from the bottom side, it shouldn't matter what you add to it.
+- Using a permanent screw to hold the scaffold in place. As long as the helix plate remains flat from the bottom, it shouldn't matter what you add to it. Therefore, a flat-headed screw might work.
 - Using hot glue or other adhesives. The only concern is them degrading over time. This can be managed with maintenance.
 
 ### Scaffold breaking over time
