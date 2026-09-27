@@ -15,7 +15,7 @@ parent: Radio
 
 # Preamble
 
-> NOTE: NOAA POES has been permanently retired because of political reasons. They will be greatly missed. A historical version of this guide with NOAA APT can be found [here](https://static.cpt-dingus.cc/archived-blog_page/Beginners%20guide%20to%20weather%20satellite%20reception%20_%20Meti%e2%80%99s%20blog.html). This link is permanent.
+> NOTE: NOAA POES has been permanently retired because of political reasons. They will be greatly missed. A historical version of this guide with NOAA APT can be found [here](https://static.metislair.com/archived-blog_page/Beginners%20guide%20to%20weather%20satellite%20reception%20_%20Meti%e2%80%99s%20blog.html). This link is permanent.
 
 
 Before anything, I have to start with some credits:
@@ -294,7 +294,7 @@ Now that we have gone over the terminology behind these satellite and know how t
 
 ## Detailed satellite information
 
-> NOAA POES used to transmit analogue APT at a 4 km/px quality 1978-2025 before being decommissioned. There are no future APT launches planned. A historical version of the guide with APT can be found [here](https://static.cpt-dingus.cc/archived-blog_page/Beginners%20guide%20to%20weather%20satellite%20reception%20_%20Meti%e2%80%99s%20blog.html)
+> NOAA POES used to transmit analogue APT at a 4 km/px quality 1978-2025 before being decommissioned. There are no future APT launches planned. A historical version of the guide with APT can be found [here](https://static.metislair.com/archived-blog_page/Beginners%20guide%20to%20weather%20satellite%20reception%20_%20Meti%e2%80%99s%20blog.html)
 
 
 ### METEOR-M

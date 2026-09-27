@@ -31,7 +31,7 @@ Knowing I could greatly improve the efficiency by adding more turns (others got 
 This helix already got me incredible results that surpassed all of my expectations. With the average SNR being at around 7 dB, the image came out with mostly no noise: 
 
 ![Meteor M2-3 IR image as described below](../../assets/images/Direct-reception-helix/msu_mr_2025-03-29_19-56-17Z_AVHRR%20543b%20IR%20False%20Color-COMPRESSED.jpg)
-*Meteor M2-3 received on 29/03/2025 with an 11 turn helix and Sawbird+ GOES. Processed using SatDump with the `AVHRR 543b IR false color` composite, equalized. 40% quality lossy JPEG compression applied, full resolution image can be viewed [here](https://static.cpt-dingus.cc/direct-rx-helix/msu_mr_2025-03-29_19-56-17Z_AVHRR%20543b%20IR%20False%20Color.png)*
+*Meteor M2-3 received on 29/03/2025 with an 11 turn helix and Sawbird+ GOES. Processed using SatDump with the `AVHRR 543b IR false color` composite, equalized. 40% quality lossy JPEG compression applied, full resolution image can be viewed [here](https://static.metislair.com/direct-rx-helix/msu_mr_2025-03-29_19-56-17Z_AVHRR%20543b%20IR%20False%20Color.png)*
 
 After some more iterations, I ended up using an 8-turn helix, with which I figured out some important things...
 
@@ -81,9 +81,9 @@ Combining all of my SNR discoveries, this helix got me a whopping 10.5 dB averag
 Having successfully gotten L3 LRIT without a dish at such a low elevation, my dream was complete at last. Here are some of my favorite LEO passes I've gathered up to that point:
 
 ![Meteor M2-3 NC composite](../../assets/images/Direct-reception-helix/M2-4_01-04-2025_13-47.jpg) <br>
-*Meteor M2-3 received on 29/03/2025 with an 8 turn helix and Sawbird+ GOES. Processed using Satdump with the `Natural Color` composite, equalized. 40% quality lossy JPEG compression applied, full resolution image can be viewed [here](https://static.cpt-dingus.cc/direct-rx-helix/M2-4_01-04-2025_13-47.png)*
+*Meteor M2-3 received on 29/03/2025 with an 8 turn helix and Sawbird+ GOES. Processed using Satdump with the `Natural Color` composite, equalized. 40% quality lossy JPEG compression applied, full resolution image can be viewed [here](https://static.metislair.com/direct-rx-helix/M2-4_01-04-2025_13-47.png)*
 
 ![NOAA 19 NC composite](../../assets/images/Direct-reception-helix/N19_01-04-2025_08-21.jpg) <br>
-*NOAA 19 received on 29/03/2025 with an 8 turn helix and Sawbird+ GOES. Processed using Satdump with the `Natural Color` composite, equalized. 40% quality lossy JPEG compression applied, full resolution image can be viewed [here](https://static.cpt-dingus.cc/direct-rx-helix/N19_01-04-2025_08-21.png)*
+*NOAA 19 received on 29/03/2025 with an 8 turn helix and Sawbird+ GOES. Processed using Satdump with the `Natural Color` composite, equalized. 40% quality lossy JPEG compression applied, full resolution image can be viewed [here](https://static.metislair.com/direct-rx-helix/N19_01-04-2025_08-21.png)*
 
 These images are the result of a few days of effort, acted like a proof of concept. I've since revisited this design, making an updated, more portable version which you can find described [here]({{site.baseurl}}/docs/Radio/Improving the direct reception helix.html)

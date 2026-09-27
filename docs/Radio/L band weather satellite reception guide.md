@@ -13,13 +13,13 @@ parent: Radio
 
 # Preamble
 
-> NOTE: NOAA POES has been permanently retired because of political reasons. They will be greatly missed. A historical version of this guide with NOAA APT can be found [here](https://static.cpt-dingus.cc/archived-blog_page/L%20band%20weather%20satellite%20reception%20_%20Meti%E2%80%99s%20blog.html). This link is permanent.
+> NOTE: NOAA POES has been permanently retired because of political reasons. They will be greatly missed. A historical version of this guide with NOAA APT can be found [here](https://static.metislair.com/archived-blog_page/L%20band%20weather%20satellite%20reception%20_%20Meti%E2%80%99s%20blog.html). This link is permanent.
 
 If you're reading this, you have probably been intrigued by the lower resolution VHF imagery that you can (or even have) received yourself. Well, you're in for a ride! The L band is relatively easy to receive thanks to commercial solutions existing for the equipment, while it's been deprecated by most LEO satellites, it still offers a lot of interesting data; particularly geostationary satellites. This guide will cover both. You can expect resolutions of roughly 1 km/px in the majority of this band. This guide will definitively describe the reception of the **L satellite band (~1.7 GHz)** when it comes to weather satellites. 
 
 **This guide assumes you have read the [VHF guide](Beginners guide to weather satellite reception) already, won't repeat some more basic concepts.**
 
-There will be sample imagery next to every satellite series, you can view the raw tree along with credits [here](https://static.cpt-dingus.cc/sat-archive). If an image doesn't have credit, I received it myself.
+There will be sample imagery next to every satellite series, you can view the raw tree along with credits [here](https://static.metislair.com/sat-archive). If an image doesn't have credit, I received it myself.
 
 # Introduction
 
@@ -75,9 +75,9 @@ These apply to all SDRs using RTL chipsets (RTLSDR blog, Nooelec SMART...)
 - Have a [**Meteor HRPT**](https://www.sigidwiki.com/wiki/METEOR-M_High_Resolution_Picture_Transmission_(HRPT)) broadcast containing 6 MSU-MR channels in addition to 30 MTVZA channels.
 - This broadcast features a very strong carrier wave making it easy to track.
 - Full resolution sample imagery:
-    - [Natural color](https://sat-archive.cpt-dingus.cc/L-band/Meteor-M/msu_mr_2024-11-09_13-23-58Z_Natural%20Color.png)
-    - [221](https://sat-archive.cpt-dingus.cc/L-band/Meteor-M/msu_mr_2024-11-09_13-23-58Z_AVHRR%20221%20False%20Color.png)
-    - [Day microphysics](https://sat-archive.cpt-dingus.cc/L-band/Meteor-M/msu_mr_2024-11-09_13-23-58Z_Day%20Microphysics.png)
+    - [Natural color](https://sat-archive.metislair.com/L-band/Meteor-M/msu_mr_2024-11-09_13-23-58Z_Natural%20Color.png)
+    - [221](https://sat-archive.metislair.com/L-band/Meteor-M/msu_mr_2024-11-09_13-23-58Z_AVHRR%20221%20False%20Color.png)
+    - [Day microphysics](https://sat-archive.metislair.com/L-band/Meteor-M/msu_mr_2024-11-09_13-23-58Z_Day%20Microphysics.png)
 
 > Meteor-M N°2-2 is currently in storage mode due to its orbital proximity to M2-4. It can be reenabled if an issue arises with M2-4.
 
@@ -92,10 +92,10 @@ These apply to all SDRs using RTL chipsets (RTLSDR blog, Nooelec SMART...)
 > Reception note: When receiving with an RTLSDR, you might run into some issues owing to its relatively high symbol rate. If you get a donut shaped constellation while decoding this signal, make sure to follow [this heading](#bad_constellation)
 
 - Full resolution sample imagery:
-    - [NOAA Natural color](https://sat-archive.cpt-dingus.cc/L-band/Metop/avhrr_3_2024-10-13_09-09-23Z_NOAA%20Natural%20Color.png)
-    - [221](https://sat-archive.cpt-dingus.cc/L-band/Metop/avhrr_3_2024-10-13_09-09-23Z_AVHRR%20221%20False%20Color.png)
-    - [4/221 merge](https://sat-archive.cpt-dingus.cc/L-band/Metop/avhrr_3_2024-10-13_09-09-23Z_4-221%20Merge.png)
-    - [Day microphysics](https://sat-archive.cpt-dingus.cc/L-band/Metop/avhrr_3_2024-10-13_09-09-23Z_Day%20Microphysics%20(Metop).png)
+    - [NOAA Natural color](https://sat-archive.metislair.com/L-band/Metop/avhrr_3_2024-10-13_09-09-23Z_NOAA%20Natural%20Color.png)
+    - [221](https://sat-archive.metislair.com/L-band/Metop/avhrr_3_2024-10-13_09-09-23Z_AVHRR%20221%20False%20Color.png)
+    - [4/221 merge](https://sat-archive.metislair.com/L-band/Metop/avhrr_3_2024-10-13_09-09-23Z_4-221%20Merge.png)
+    - [Day microphysics](https://sat-archive.metislair.com/L-band/Metop/avhrr_3_2024-10-13_09-09-23Z_Day%20Microphysics%20(Metop).png)
     
 > !NOTE! - Since 03/2025, MetOp B was found to have a deteriorating modulator intermittently causing a significant hit to its SNR. According to receptions by Lego11 and Aang23, there was an approximately 7 dB loss compared to the nominal status. This issue is visible when decoding at higher SNRs, where the modulator starts to form an X shape instead of the correct OQPSK modulation.
 
@@ -111,8 +111,8 @@ These apply to all SDRs using RTL chipsets (RTLSDR blog, Nooelec SMART...)
 > Reception note: The satellite antenna seems to have an inconsistent radiation pattern causing the signal to significantly fluctuate when heading away from you.
 
 - Full resolution sample imagery:
-    - [AMSU False color](https://sat-archive.cpt-dingus.cc/L-band/EPS-Sterna/Arctic-Weather-Satellite/sterna_2024-11-16_18-18-55Z_AMSU%20False%20Color.png)
-    - [Microwave airmass](https://sat-archive.cpt-dingus.cc/L-band/EPS-Sterna/Arctic-Weather-Satellite//sterna_2024-11-16_18-18-55Z_Sterna%20Microwave%20Airmass.png)
+    - [AMSU False color](https://sat-archive.metislair.com/L-band/EPS-Sterna/Arctic-Weather-Satellite/sterna_2024-11-16_18-18-55Z_AMSU%20False%20Color.png)
+    - [Microwave airmass](https://sat-archive.metislair.com/L-band/EPS-Sterna/Arctic-Weather-Satellite//sterna_2024-11-16_18-18-55Z_Sterna%20Microwave%20Airmass.png)
 
 
 ![AWS PFM screenshot from SatDump](../../assets/images/Radio/AWS-PFM-DB.jpg) <br>
@@ -123,14 +123,14 @@ These apply to all SDRs using RTL chipsets (RTLSDR blog, Nooelec SMART...)
 
 ### NOAA POES (DEAD)
 
-- NOAA POES used to transmit HRPT 1978-2025 before being decommissioned. There are no future launches. A historical version of the guide with POES can be found [here](https://static.cpt-dingus.cc/archived-blog_page/L%20band%20weather%20satellite%20reception%20_%20Meti%e2%80%99s%20blog.html)
+- NOAA POES used to transmit HRPT 1978-2025 before being decommissioned. There are no future launches. A historical version of the guide with POES can be found [here](https://static.metislair.com/archived-blog_page/L%20band%20weather%20satellite%20reception%20_%20Meti%e2%80%99s%20blog.html)
 - Sample imagery will be kept here for historical purposes
 - Full resolution sample imagery:
-    - [NOAA Natural color](https://sat-archive.cpt-dingus.cc/L-band/NOAA%20POES//avhrr_3_2024-12-01_10-13-04Z_NOAA%20Natural%20Color.png)
-    - [221](https://sat-archive.cpt-dingus.cc/L-band/NOAA%20POES//avhrr_3_2024-12-01_10-13-04Z_AVHRR%20221%20False%20Color.png)
-    - [4/221 merge](https://sat-archive.cpt-dingus.cc/L-band/NOAA%20POES//avhrr_3_2024-12-01_10-13-04Z_4-221%20Merge.png)
-    - [Enhanced Infrared](https://sat-archive.cpt-dingus.cc/L-band/NOAA%20POES//avhrr_3_2024-12-01_10-13-04Z_Enhanced%20IR.png)
-    - [NO](https://sat-archive.cpt-dingus.cc/L-band/NOAA%20POES//avhrr_3_2024-12-01_10-13-04Z_NO%20enhancement.png)
+    - [NOAA Natural color](https://sat-archive.metislair.com/L-band/NOAA%20POES//avhrr_3_2024-12-01_10-13-04Z_NOAA%20Natural%20Color.png)
+    - [221](https://sat-archive.metislair.com/L-band/NOAA%20POES//avhrr_3_2024-12-01_10-13-04Z_AVHRR%20221%20False%20Color.png)
+    - [4/221 merge](https://sat-archive.metislair.com/L-band/NOAA%20POES//avhrr_3_2024-12-01_10-13-04Z_4-221%20Merge.png)
+    - [Enhanced Infrared](https://sat-archive.metislair.com/L-band/NOAA%20POES//avhrr_3_2024-12-01_10-13-04Z_Enhanced%20IR.png)
+    - [NO](https://sat-archive.metislair.com/L-band/NOAA%20POES//avhrr_3_2024-12-01_10-13-04Z_NO%20enhancement.png)
 
 
 > Fun fact: Since 2021, **NOAA 2** (ITOS-D) - A 50-year-old satellite! - has gone back to life transmitting a legacy [ITOS HRPT](https://www.sigidwiki.com/wiki/NOAA_ITOS_High_Resolution_Picture_Transmission_(HRPT)) broadcast. **It includes no actual imagery** since the VHRR sensor has died ages ago, however it still matches the modulation and spec - if decoded properly you can still see the familiar sync lines from APT broadcasts.
@@ -140,8 +140,8 @@ These apply to all SDRs using RTL chipsets (RTLSDR blog, Nooelec SMART...)
 - In a statement from NSMC, the satellite has **FAILED** as of 11/2024. The satellite used to transmit true color imagery when in sight of Chinese territory. 
 - Sample imagery will be kept here for historical purposes
 - Full resolution sample imagery:
-    - [197 (True color)](https://sat-archive.cpt-dingus.cc/L-band/FengYun-3/virr_2024-08-06_13-12-16Z_197.png)
-    - [AVHRR 221 (False color)](https://sat-archive.cpt-dingus.cc/L-band/FengYun-3/virr_2024-08-06_13-12-16Z_221.png)
+    - [197 (True color)](https://sat-archive.metislair.com/L-band/FengYun-3/virr_2024-08-06_13-12-16Z_197.png)
+    - [AVHRR 221 (False color)](https://sat-archive.metislair.com/L-band/FengYun-3/virr_2024-08-06_13-12-16Z_221.png)
 
 
 
@@ -206,23 +206,23 @@ These apply to all SDRs using RTL chipsets (RTLSDR blog, Nooelec SMART...)
 - Full resolution sample imagery (Credit to Patrick Cunningham):
     - HRIT:
         - Full disk:
-            - [ABI False Color](https://sat-archive.cpt-dingus.cc/L-band/GOES-R/HRIT/GOES-19/2025-06-26_12-07_goes-r-hrit_Patrick-Cunningham/IMAGES/GOES-19/Full%20Disk/2025-06-26_16-00-20/abi_rgb_ABI_False_Color.png)
-            - [Infrared longwave window](https://sat-archive.cpt-dingus.cc/L-band/GOES-R/HRIT/GOES-19/2025-06-26_12-07_goes-r-hrit_Patrick-Cunningham/IMAGES/GOES-19/Full%20Disk/2025-06-26_16-00-20/abi_rgb_Infrared_Longwave_Window_Band.png)
+            - [ABI False Color](https://sat-archive.metislair.com/L-band/GOES-R/HRIT/GOES-19/2025-06-26_12-07_goes-r-hrit_Patrick-Cunningham/IMAGES/GOES-19/Full%20Disk/2025-06-26_16-00-20/abi_rgb_ABI_False_Color.png)
+            - [Infrared longwave window](https://sat-archive.metislair.com/L-band/GOES-R/HRIT/GOES-19/2025-06-26_12-07_goes-r-hrit_Patrick-Cunningham/IMAGES/GOES-19/Full%20Disk/2025-06-26_16-00-20/abi_rgb_Infrared_Longwave_Window_Band.png)
         - Mesoscale: 
-            - [ABI False Color (Mesoscale 1)](https://sat-archive.cpt-dingus.cc/L-band/GOES-R/HRIT/GOES-19/2025-06-26_12-07_goes-r-hrit_Patrick-Cunningham/IMAGES/GOES-19/Mesoscale%201/2025-06-26_14-22-25/abi_rgb_ABI_False_Color.png)
-            - [ABI False Color (Mesoscale 2)](https://sat-archive.cpt-dingus.cc/L-band/GOES-R/HRIT/GOES-19/2025-06-26_12-07_goes-r-hrit_Patrick-Cunningham/IMAGES/GOES-19/Mesoscale%202/2025-06-26_13-22-55/abi_rgb_ABI_False_Color.png)
+            - [ABI False Color (Mesoscale 1)](https://sat-archive.metislair.com/L-band/GOES-R/HRIT/GOES-19/2025-06-26_12-07_goes-r-hrit_Patrick-Cunningham/IMAGES/GOES-19/Mesoscale%201/2025-06-26_14-22-25/abi_rgb_ABI_False_Color.png)
+            - [ABI False Color (Mesoscale 2)](https://sat-archive.metislair.com/L-band/GOES-R/HRIT/GOES-19/2025-06-26_12-07_goes-r-hrit_Patrick-Cunningham/IMAGES/GOES-19/Mesoscale%202/2025-06-26_13-22-55/abi_rgb_ABI_False_Color.png)
         - Other data:
-            - [Retransmitted other GOES](https://sat-archive.cpt-dingus.cc/L-band/GOES-R/HRIT/GOES-19/2025-06-26_12-07_goes-r-hrit_Patrick-Cunningham/IMAGES/GOES-18/Full%20Disk/2025-06-26_14-50-21/G18_13_20250626T145021Z.png) (GOES 18 retransmitted from GOES 19 HRIT)
-            - [Himawari](https://sat-archive.cpt-dingus.cc/L-band/GOES-R/HRIT/GOES-18/2025-01-08_21-10_goes-hrit_Meti/IMAGES/Himawari/2025-01-08_21-51-00/) (click on a file to view it)
-            - [MSG](https://sat-archive.cpt-dingus.cc/L-band/GOES-R/HRIT/GOES-19/2025-06-26_12-07_goes-r-hrit_Patrick-Cunningham/EMWIN/sat-imagery-crops/Z_EIIO00KWBC260200_C_KWIN_20250626140039_399237-4-INDCIRUS.JPG)
+            - [Retransmitted other GOES](https://sat-archive.metislair.com/L-band/GOES-R/HRIT/GOES-19/2025-06-26_12-07_goes-r-hrit_Patrick-Cunningham/IMAGES/GOES-18/Full%20Disk/2025-06-26_14-50-21/G18_13_20250626T145021Z.png) (GOES 18 retransmitted from GOES 19 HRIT)
+            - [Himawari](https://sat-archive.metislair.com/L-band/GOES-R/HRIT/GOES-18/2025-01-08_21-10_goes-hrit_Meti/IMAGES/Himawari/2025-01-08_21-51-00/) (click on a file to view it)
+            - [MSG](https://sat-archive.metislair.com/L-band/GOES-R/HRIT/GOES-19/2025-06-26_12-07_goes-r-hrit_Patrick-Cunningham/EMWIN/sat-imagery-crops/Z_EIIO00KWBC260200_C_KWIN_20250626140039_399237-4-INDCIRUS.JPG)
 
     - GRB:
         - RHCP - Credit to Aang23:
-            - [Full-Disk RGB 125](https://sat-archive.cpt-dingus.cc/L-band/GOES-R/GRB/GOES-16/2022-07-27_23-37_goes-grb_Aang23/ABI/FULLDISK/20220728T131152Z/ABI_FULLDISK_RGB135_20220728T131152Z.png)
-            - [CONUS RGB 125](https://sat-archive.cpt-dingus.cc/L-band/GOES-R/GRB/GOES-16/2022-07-27_23-37_goes-grb_Aang23/ABI/CONUS/20220727T234457Z/ABI_CONUS_RGB135_20220727T234457Z.png)
-            - [Mesoscale 1 RGB 135](https://sat-archive.cpt-dingus.cc/L-band/GOES-R/GRB/GOES-16/2022-07-27_23-37_goes-grb_Aang23/ABI/MESO1/20220727T234049Z/ABI_MESO1_RGB135_20220727T234049Z.png)
-            - [304 angstrom SUVI](https://sat-archive.cpt-dingus.cc/L-band/GOES-R/GRB/GOES-16/2022-07-27_23-37_goes-grb_Aang23/SUVI/Fe304/SUVI_Fe304_20220727T234053Z.png)
-            - [171 angstrom SUVI](https://sat-archive.cpt-dingus.cc/L-band/GOES-R/GRB/GOES-16/2022-07-27_23-37_goes-grb_Aang23/SUVI/Fe171/SUVI_Fe171_20220727T234355Z.png)
+            - [Full-Disk RGB 125](https://sat-archive.metislair.com/L-band/GOES-R/GRB/GOES-16/2022-07-27_23-37_goes-grb_Aang23/ABI/FULLDISK/20220728T131152Z/ABI_FULLDISK_RGB135_20220728T131152Z.png)
+            - [CONUS RGB 125](https://sat-archive.metislair.com/L-band/GOES-R/GRB/GOES-16/2022-07-27_23-37_goes-grb_Aang23/ABI/CONUS/20220727T234457Z/ABI_CONUS_RGB135_20220727T234457Z.png)
+            - [Mesoscale 1 RGB 135](https://sat-archive.metislair.com/L-band/GOES-R/GRB/GOES-16/2022-07-27_23-37_goes-grb_Aang23/ABI/MESO1/20220727T234049Z/ABI_MESO1_RGB135_20220727T234049Z.png)
+            - [304 angstrom SUVI](https://sat-archive.metislair.com/L-band/GOES-R/GRB/GOES-16/2022-07-27_23-37_goes-grb_Aang23/SUVI/Fe304/SUVI_Fe304_20220727T234053Z.png)
+            - [171 angstrom SUVI](https://sat-archive.metislair.com/L-band/GOES-R/GRB/GOES-16/2022-07-27_23-37_goes-grb_Aang23/SUVI/Fe171/SUVI_Fe171_20220727T234355Z.png)
 
 
 ![GOES CDA Telemetry and HRIT signal screenshots from SatDump](../../assets/images/Radio/GOES-CDA-HRIT.jpg) <br>
@@ -250,8 +250,8 @@ These apply to all SDRs using RTL chipsets (RTLSDR blog, Nooelec SMART...)
 > Reception note: The satellite normally does regional crops, as they can be scanned faster than full disc images at just 15 minutes. It still transmits a full disc image every 3 hours.
 
 - Full resolution sample imagery:
-    - [Raw channel 1](https://sat-archive.cpt-dingus.cc/L-band/EWS-G/GVAR/EWS-G2/2025-06-01_00-00_goes-gvar_that-zbychu/2025-06-01_08-45/G15_1_20250601T084523Z.png) - No noise, credit to that_zbychu)
-    - [False Color](https://sat-archive.cpt-dingus.cc/L-band/EWS-G/GVAR/EWS-G2/2025-02-16_13-01_goes-gvar_Meti/G15_FC_20250216T130335Z.png)
+    - [Raw channel 1](https://sat-archive.metislair.com/L-band/EWS-G/GVAR/EWS-G2/2025-06-01_00-00_goes-gvar_that-zbychu/2025-06-01_08-45/G15_1_20250601T084523Z.png) - No noise, credit to that_zbychu)
+    - [False Color](https://sat-archive.metislair.com/L-band/EWS-G/GVAR/EWS-G2/2025-02-16_13-01_goes-gvar_Meti/G15_FC_20250216T130335Z.png)
 
 ![GOES GVAR screenshot from SatDump](../../assets/images/Radio/GOES-GVAR.jpg) <br>
 *EWS-G2 (GOES 15) GVAR*
@@ -295,8 +295,8 @@ Signal-specific notes:
        5. If you still can't sync, try setting the pll bandwidth to 0.002 [#pll-bw]
 
 - Full resolution sample imagery:
-    - [HRIT Natural color](https://sat-archive.cpt-dingus.cc/L-band/Elektro/HRIT/Elektro-L3/2024-11-09_09-00_elektro-hrit_Meti/msu_gs_Natural%20Color.png)
-    - [LRIT Natural color](https://sat-archive.cpt-dingus.cc/L-band/Elektro/LRIT/Elektro-L3/2024-02-28_09-41_elektro-lrit_Meti/IMAGES/L3_NC_20240228T093000Z.png)
+    - [HRIT Natural color](https://sat-archive.metislair.com/L-band/Elektro/HRIT/Elektro-L3/2024-11-09_09-00_elektro-hrit_Meti/msu_gs_Natural%20Color.png)
+    - [LRIT Natural color](https://sat-archive.metislair.com/L-band/Elektro/LRIT/Elektro-L3/2024-02-28_09-41_elektro-lrit_Meti/IMAGES/L3_NC_20240228T093000Z.png)
 
 ![Elektro-L LRIT and HRIT signal screenshots from SatDump](../../assets/images/Radio/Elektro-LRIT-HRIT.jpg)
 *Elektro-L N°3 LRIT on the top, HRIT on the bottom*
@@ -318,8 +318,8 @@ Signal-specific notes:
 > These satellites also broadcast a very weak **CDAS** raw downlink, but it's almost completely undocumented owing to its weak & wide nature. It is present just left S-VISSR, the satellite uses the same transmitter as S-VISSR to transmit it albeit at a significantly higher symbol rate to instantly transmit the whole scan line in real time. This is the reason why S-VISSR is so jumpy.
 
 - Full resolution sample imagery:
-    - [False color crop](https://sat-archive.cpt-dingus.cc/L-band/FengYun-2/FengYun-2H/2025-02-16_13-44_fengyun-svissr_Meti/FY-2x_FC_20250216T134450Z.png)
-    - [False color FD](https://sat-archive.cpt-dingus.cc/L-band/FengYun-2/FengYun-2H/2024-08-17_00-00_fengyun-svissr_Meti/2024-08-17_08-25/FY-2x_FC_20240817T082620Z.png)
+    - [False color crop](https://sat-archive.metislair.com/L-band/FengYun-2/FengYun-2H/2025-02-16_13-44_fengyun-svissr_Meti/FY-2x_FC_20250216T134450Z.png)
+    - [False color FD](https://sat-archive.metislair.com/L-band/FengYun-2/FengYun-2H/2024-08-17_00-00_fengyun-svissr_Meti/2024-08-17_08-25/FY-2x_FC_20240817T082620Z.png)
 
 ![CDAS and S-VISSR screenshot from SatDump](../../assets/images/Radio/FengYun-SVISSR.jpg) <br>
 *FengYun 2H S-VISSR*
@@ -340,8 +340,8 @@ Signal-specific notes:
 
 
 - Full resolution sample imagery:
-    - [LRIT](https://sat-archive.cpt-dingus.cc/L-band/Fengyun-4/LRIT/FengYun-4A/2023-08-04_11-14_fengyun-4-lrit_plugger-lockett/) - Credit to plugger_lockett, click on a file to view it
-    - [HRIT](https://sat-archive.cpt-dingus.cc/L-band/Fengyun-4/HRIT/Fengyun-4A/2023-08-22_06-14_fengyun-4a-hrit_plugger-lockett/FY4A_12_20230822T061400Z.png) - Credit to plugger_lockett
+    - [LRIT](https://sat-archive.metislair.com/L-band/Fengyun-4/LRIT/FengYun-4A/2023-08-04_11-14_fengyun-4-lrit_plugger-lockett/) - Credit to plugger_lockett, click on a file to view it
+    - [HRIT](https://sat-archive.metislair.com/L-band/Fengyun-4/HRIT/Fengyun-4A/2023-08-22_06-14_fengyun-4a-hrit_plugger-lockett/FY4A_12_20230822T061400Z.png) - Credit to plugger_lockett
 
 ![FengYun LRIT screenshot from SatDump](../../assets/images/Radio/FengYun-LRIT.jpg) <br>
 *FengYun 4A LRIT, Credit: drew0781 on Discord*
@@ -361,9 +361,9 @@ Signal-specific notes:
 
 - Full resolution sample imagery:
     - HRIT
-        - [Raw channel 1](https://sat-archive.cpt-dingus.cc/L-band/GEO-KOMPSAT/HRIT/GEO-KOMPSAT-2A/2025-01-08_04-26_gk2a-lrit_Meti/GK2A_VI006_20250108T042636Z.png)
+        - [Raw channel 1](https://sat-archive.metislair.com/L-band/GEO-KOMPSAT/HRIT/GEO-KOMPSAT-2A/2025-01-08_04-26_gk2a-lrit_Meti/GK2A_VI006_20250108T042636Z.png)
     - LRIT 
-        - [Clean longwave IR](https://sat-archive.cpt-dingus.cc/L-band/GEO-KOMPSAT/LRIT/GEO-KOMPSAT-2A/2024-12-28_08-50_gk2a-lrit_Meti/ami_Clean%20Longwave%20IR%20Window%20Band.png)
+        - [Clean longwave IR](https://sat-archive.metislair.com/L-band/GEO-KOMPSAT/LRIT/GEO-KOMPSAT-2A/2024-12-28_08-50_gk2a-lrit_Meti/ami_Clean%20Longwave%20IR%20Window%20Band.png)
 
 
 ![GEO-KOMPSAT LRIT and HRIT screenshots from SatDump](../../assets/images/Radio/GK-LRIT-HRIT.jpg) <br>
@@ -384,10 +384,10 @@ Signal-specific notes:
     - FES - Full Earth Scan - The whole earth is scanned every 15 minutes
 
 - Full resolution sample imagery (credit to FelixTRG):
-    - [321](https://sat-archive.cpt-dingus.cc/L-band/MSG/Raw-downlink/Meteosat-10/seviri_rgb_321.png)
-    - [221](https://sat-archive.cpt-dingus.cc/L-band/MSG/Raw-downlink/Meteosat-10/seviri_rgb_221.png)
-    - [Day Microphysics](https://sat-archive.cpt-dingus.cc/L-band/MSG/Raw-downlink/Meteosat-10/seviri_rgb_Day_Microphysics.png) - Misaligned channels, 'blur' effect
-    - [Water Vapor](https://sat-archive.cpt-dingus.cc/L-band/MSG/Raw-downlink/Meteosat-10/seviri_rgb_7.35_%c2%b5m_Water_Vapor.png)
+    - [321](https://sat-archive.metislair.com/L-band/MSG/Raw-downlink/Meteosat-10/seviri_rgb_321.png)
+    - [221](https://sat-archive.metislair.com/L-band/MSG/Raw-downlink/Meteosat-10/seviri_rgb_221.png)
+    - [Day Microphysics](https://sat-archive.metislair.com/L-band/MSG/Raw-downlink/Meteosat-10/seviri_rgb_Day_Microphysics.png) - Misaligned channels, 'blur' effect
+    - [Water Vapor](https://sat-archive.metislair.com/L-band/MSG/Raw-downlink/Meteosat-10/seviri_rgb_7.35_%c2%b5m_Water_Vapor.png)
 
 > Reception note: The minimal dish size is speculative due to insufficient data, I do not know of anybody receiving it with just a SawBird. The 4-meter dish size given is a rough estimate.
 
@@ -615,7 +615,7 @@ You have two choices for winding the wire:
 1. You can wind it manually (Tip: 55 mm PVC pipes are really useful for keeping a consistent diameter)
 2. 3d print a [premade stand](https://www.thingiverse.com/thing:4980180) and stick a wire through it. Also acts as a support for the wire. If you choose this approach, use the `1700L_5.5T_0.14S_4D_10-90M.stl` file. Use PETG if possible to prevent warping under sunlight.
 
-    - If working with a prime focus dish, you can download a modified version of the stand with 3.5 turns [here](https://static.cpt-dingus.cc/dsgc_helix/1700L_3.5T_0.14s.stl). Modified original [SCAD](https://github.com/sgcderek/helix-antenna-scaffold/blob/master/dsgc_helix_v5.scad), ©dereksgc
+    - If working with a prime focus dish, you can download a modified version of the stand with 3.5 turns [here](https://static.metislair.com/dsgc_helix/1700L_3.5T_0.14s.stl). Modified original [SCAD](https://github.com/sgcderek/helix-antenna-scaffold/blob/master/dsgc_helix_v5.scad), ©dereksgc
 
 > Make sure to pre-bend the wire into a rough spiral before putting it into the stand! It will make your life significantly easier.
 
@@ -939,7 +939,7 @@ This error appears when your sampling rate is lower than the signals symbol rate
 ## Why does LRIT transmit pre-equalized channels? {#lrit-explanation}
 
 ![A crop as stated below showing an extremely overexposed edge of the Earth](../../assets/images/Radio/lrit-explained.jpg)
-*Elektro-L3 channel 1 crop received by yours truly from LRIT on 15/8/2024 at 15:42Z. Lossy JPEG compression with 60% quality applied. Raw image can be found [here](https://sat-archive.cpt-dingus.cc/L-band/Elektro/LRIT/Elektro-L3/2024-08-15_15-30_elektro-lrit_Meti/L3_1_20240815T153000Z.jpg)*
+*Elektro-L3 channel 1 crop received by yours truly from LRIT on 15/8/2024 at 15:42Z. Lossy JPEG compression with 60% quality applied. Raw image can be found [here](https://sat-archive.metislair.com/L-band/Elektro/LRIT/Elektro-L3/2024-08-15_15-30_elektro-lrit_Meti/L3_1_20240815T153000Z.jpg)*
 
 > Thanks to Lego11 for sharing this explanation!
 
