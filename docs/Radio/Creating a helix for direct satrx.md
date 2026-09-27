@@ -86,4 +86,4 @@ Having successfully gotten L3 LRIT without a dish at such a low elevation, my dr
 ![NOAA 19 NC composite](../../assets/images/Direct-reception-helix/N19_01-04-2025_08-21.jpg) <br>
 *NOAA 19 received on 29/03/2025 with an 8 turn helix and Sawbird+ GOES. Processed using Satdump with the `Natural Color` composite, equalized. 40% quality lossy JPEG compression applied, full resolution image can be viewed [here](https://static.cpt-dingus.cc/direct-rx-helix/N19_01-04-2025_08-21.png)*
 
-I only had a few days to get these, there are more to come (:
+These images are the result of a few days of effort, acted like a proof of concept. I've since revisited this design, making an updated, more portable version which you can find described [here]({{site.baseurl}}/docs/Radio/Improving the direct reception helix.html)

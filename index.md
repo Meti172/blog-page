@@ -13,8 +13,9 @@ I try to put things that others might find useful in here, such as guides or rev
 - [Beginner's weather satellite reception guide]({{site.baseurl}}/docs/Radio/Beginners guide to weather satellite reception)
 - [L-band weather satellite reception guide]({{site.baseurl}}/docs/Radio/L band weather satellite reception guide)
 
-Most recent addition:
+Most recent additions:
 
+- [Improving my direct reception helix]({{site.baseurl}}/docs/Radio/Improving the direct reception helix.html)
 - [Space weather knowledge base]({{site.baseurl}}/docs/Space weather tracking.html)
 
 
