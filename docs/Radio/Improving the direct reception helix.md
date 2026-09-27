@@ -70,7 +70,7 @@ This part sucked to do in my case because of the lack of hardware tools. I had t
 ![A picture of the plate with the big SMA hole mangled out.](../../assets/images/Improved-helix/Reflector-plate.jpg) <br>
 *Like I said, not <u><b>completely</b></u> massacred, although the hole still looks horrible. Thankfully it doesn't matter, as this area is covered by the helix's own plate.*
 
-> Please note that the pliers pictured are not the metal cutting ones I used, I only used these to get rid of small poky bits. You can put down your pitchforks.
+> Please note that the pliers pictured are not the metal cutting ones I used, I only used these to get rid of small poky bits. You can put your pitchforks down.
 
 ## Putting everything together
 
