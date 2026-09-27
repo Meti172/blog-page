@@ -21,7 +21,7 @@ Ever since I moved to the Netherlands for University, I haven't had the liberty 
 
 The biggest constraint is easily the ground plane. A standard setup consists of a tall but narrow helix which is soldered to a big flat square. The size of this plate has a very significant effect on signal strength, as it is acting as the primary reflector. The smallest viable size is already a (relatively) huge massive **15x15 centimeters**.
 
-Considering the depth\*width dimensions are the limiting factor of what I can fit into a backpack, I considered being able to take the helix off the ground plane to be able to store the plate on its side - that would make the whole setup no bigger than a book and a water bottle!
+Considering the depth\*width dimensions are the limiting factor of what I can fit into a backpack, I thought about being able to take the helix off the ground plane to be able to store the plate on its side - that would make the whole setup no bigger than a book and a water bottle!
 
 The obvious issue is, that the helix is soldered to the SMA port which is drilled into the plate itself. Resoldering it every time would be tedious, so I came up with the idea of **making a separate, smaller ground plane which screws into a big, primary one**. This would allow the helix to be attached and soldered to the smaller plate, with a big one attached to it by a couple of bolts. That makes it very easy to (dis)assemble!
 
