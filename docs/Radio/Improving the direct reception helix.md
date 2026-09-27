@@ -147,7 +147,7 @@ A Meteor pass soon followed:
 ![As described below](../../assets/images/Improved-helix/Meteor-M2-3_20-07_18-09-2026_AVHRR543b_quarterres.jpg) <br>
 *Meteor M2-3 HRPT received at 20:07 UTC on 18-09-2026 using the direct reception helix pictured above with a SawBird GOES+ and a LibreSDR B210 Mini. Processed with SatDump using the `AVHRR 543b` composite. Lossy JPEG-compression applied at 25% original resolution. Full-resolution JPEG can be found [here](../../assets/images/Improved-helix/Meteor-M2-3_20-07_18-09-2026_AVHRR543b.jpg)*
 
-The Meteor pass showed that data is receivable as low as 0°, with the SNR averaging around 46 dB below 10° elevation and at 10-11 dB above 10°. MetOp-B also passed that evening but was less glorious due to an ongoing modulator issue:
+The Meteor pass showed that data is receivable as low as 0°, with the SNR averaging around 4-6 dB below 10° elevation and at 10-11 dB above 10°. MetOp-B also passed that evening but was less glorious due to an ongoing modulator issue:
 
 ![As described below](../../assets/images/Improved-helix/MetOp-B_19-38_18-09-2026_AVHRR543b_quarterres.jpg) <br>
 *MetOp-B AHRPT received at 20:07 UTC on 18-09-2026 using the direct reception helix pictured above with a SawBird GOES+ and a LibreSDR B210 Mini. Processed with SatDump using the `AVHRR 543b` composite. Lossy JPEG-compression applied at 25% original resolution. Full-resolution JPEG can be found [here](../../assets/images/Improved-helix/MetOp-B_19-38_18-09-2026_AVHRR543b.jpg)*
