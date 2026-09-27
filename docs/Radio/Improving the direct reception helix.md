@@ -195,7 +195,7 @@ The testing showed that this design is definitely viable for satellite reception
 
 ## Potential points of failure
 
-While relatively robust, there rae a few points which might need some more engineering work:
+While relatively robust, there are a few points which might need some more engineering work:
 
 ### Handle
 
