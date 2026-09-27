@@ -55,7 +55,7 @@ Since I reused plates from my old direct reception helices, I already had holes 
 
 Now it's time for the scaffold mounting. For mine, I specifically chose 11 cm spacing with 11 mm diameter bolts, which seemed like a sweet spot offering good structural rigidity when the feed is screwed together. You can choose any spacing and screw size you want, but I don't advise going below M6 for the screw size or < 10 cm for the spacing to avoid structural issues.
 
-Now that you have the holes drilled, put the scaffold on the plate and screw it in. Trace the outline, then remove the scaffold once again. You now have to cut out the shape just around the metal plate - I used metal cutting pliers for this. Try to make the edges smooth for your sake - more doesn't hurt, it just makes it a big more difficult to store.
+Now that you have the holes drilled, put the scaffold on the plate and screw it in. Trace the outline, then remove the scaffold once again. You now have to cut out the shape just around the metal plate - I used metal cutting pliers for this. Try to make the edges smooth for your sake - more metal doesn't hurt, it just makes it a bit more difficult to store since the size goes up.
 
 ![A picture of the small drilled helix plane.](../../assets/images/Improved-helix/Helix-plate.jpg) <br>
 *See how I cut just around the outline - this allows the helix to have something to mechanically lean up against, as well as giving us space to later put hot glue/other adhesives to keep it tied down.*
@@ -119,7 +119,7 @@ In later iterations I used a screw drilled sideways as a sort of 'ghetto' handle
 The solution I went with for this design is to use the [SawBird cover](https://www.thingiverse.com/thing:6682161) designed by T0nito. The bulk of the mechanical stress goes through the cover and into the actual ground plane, allowing you to use it as a handle. The important part is installing it correctly though:
 
 ![As described below](../../assets/images/Improved-helix/Enclosure-1.jpg) <br>
-*1. Remove the SMA screw from the 'Output' side of your SawBird*
+*1. Remove the SMA nut from the 'Output' side of your SawBird*
 
 ![As described below](../../assets/images/Improved-helix/Enclosure-2.jpg) <br>
 *2. Hold the SMA on your feed in place with one hand, use the other to screw the SawBird in until it's nice and tight*
@@ -128,7 +128,7 @@ The solution I went with for this design is to use the [SawBird cover](https://w
 *3. Slide the cover on, running the output SMA through the hole at the bottom. If you have a big gap between the handle and the ground plane, you did something wrong! It should be able to sit flush.*
 
 ![As described below](../../assets/images/Improved-helix/Enclosure-4.jpg) <br>
-*4. Put the SMA screw back, tighten it until there is no gap left between the cover and the ground plane and you have enough threads exposed to screw in your cabling. **Make sure the cover sits flush with the plate, because if there is a gap - even small - it stops being load-bearing! This means, that your SawBird's input SMA becomes load-bearing instead, risking snapping it off!!!***
+*4. Put the SMA nut back, tighten it until there is no gap left between the cover and the ground plane, and you have enough threads exposed to screw in your cabling. **Make sure the cover sits flush with the plate, because if there is a gap - even small - it stops being load-bearing! This means, that your SawBird's input SMA becomes load-bearing instead, risking snapping it off!!!***
 
 ![As described below](../../assets/images/Improved-helix/Enclosure-5.jpg) <br>
 *5. You're done! The images used a single ground plane, but yours should look identical. The lack of a gap shows that the cover is installed correctly and can be used as a handle!*
