@@ -566,7 +566,7 @@ I was checking the store where I bought the piggy bank continuously over weeks, 
 Extremely heavy and extremely difficult to cut, I do not recommend anybody do this crap. It sucked. 
 
 ![A picture of the new cantenna](../../assets/images/three-years-of-satrx/New-cantenna.jpg) <br>
-*The new cantenna in all of its glory. The bottom is a place I riveted to it.*
+*The new cantenna in all of its glory. The bottom is a second metal plate I riveted to it.*
 
 Drilling this thing sucked as well, as the steel was super thick. Thankfully, I managed to get it onto the prime focus dish after some... okay, a *lot* of effort. I used to use the malleability of the old cantenna to my advantage by slightly bending it when screwing the feed arms in, whereas with this one I had to manhandle it until all feed arms were in the mounting holes properly. Not a fun experience.
 
