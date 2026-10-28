@@ -674,7 +674,7 @@ I heavily encourage you to give it a visit if you're curious about the broadcast
 
 Another quickie. On this day, Meteor M2-3 performed an MSU-MR calibration. At first the community got scared thinking the upset was unintentional and a sign of the satellite losing attitude control like with Meteor M1 and M2. However, Lego calmed everyone down describing that this is normal and just the way that these satellites calibrate their imagers.
 
-> TL;DR due to budget constraints, they have to rotate the whole satellite to point at the moon and sun in order to get a known brightness reference.
+> TL;DR they have to rotate the whole satellite to point at the moon and sun in order to get a known brightness reference.
 
 Hearing about the Meteor upset I quickly ran out with my direct reception setup and captured this image:
 
