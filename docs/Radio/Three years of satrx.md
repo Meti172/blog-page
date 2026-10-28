@@ -95,7 +95,7 @@ I had a 50/50 shot of receiving either M2-4 or M2-2 given that the signals look 
 As a fun side note, the constellation was very funky when the two satellites got close to one another - see [here](https://x.com/Meti172172/status/1763638058358866076)
 
 
-## Cantenna experiments and S-VISSR
+## Cantenna experiments and S-VISSR
 
 Mid-03/2024
 
@@ -424,7 +424,7 @@ It also transmits some other miscallenous data, some of which you can view [here
 
 Having gotten my bearings with L-band by now, I started trying to polish my setups. I obviously still made mistakes, but they were more random rather than originating solely from ignorance.
 
-## Dishful Australia
+## Dishful Australia
 
 01/2025
 
@@ -512,7 +512,7 @@ And work fine it did. Even better than a lot of my friends expected! Most notabl
 
 A semi important thing that happened shortly before was, that I was gifted an Airspy R2 from @KentuckyFriedData. I'm still incredibly grateful for that. Big kudos to ya <3
 
-## Feed and USB incidents
+## Feed and USB incidents
 
 4/4/2025
 
@@ -791,7 +791,7 @@ From the few tests I did on Elektro-L3, it also performed very well! I just neve
 I definitely want to revisit this at some point, as it really isn't all that difficult to make.
 
 
-## Final APT reception
+## Final APT reception
 
 18/08/2025
 
@@ -1062,7 +1062,7 @@ I did so, it turned out the first stage of the LNA was acting weird, and that th
 
 5/2026
 
-With summer quickly approaching, the MacBook Air's fan-less design was quickly catching up to bite me in my arse. With temperatures rising and the temperatures in sunlight passing 40 °C, the laptop started heating up to the point where I actually got burnt touching it. The stupid design made me stop going out for RXes when it was sunny, because it was flat out impossible to process the data afterwards!
+With summer quickly approaching, the MacBook Air's fan-less design was quickly catching up to bite me in my arse. With temperatures rising and the temperatures in sunlight passing 40 °C, the laptop started heating up to the point where I actually got burnt touching it. The stupid design made me stop going out for RXes when it was sunny, because it was flat out impossible to process the data afterwards!
 
 Knowing I was going to do a lot more satrx before the end of summer and that the 512 GB wouldn't get me far in uni, I decided it was time to replace the MacBook. A shame, really - I liked a lot of aspects about the laptop. I have a full review available [here]({{site.baseurl}}/docs/A measured MacBook Air review.html)
 
@@ -1185,7 +1185,7 @@ Even though the future is uncertain, I am incredibly grateful for the 3 years I 
 
 Here's to another year of fun.
 
-> "Dance through the darkness" <br>
+> "Dance through the darkness" <br>
 > \~ Jack Abbot, *The Pitt*
 
 
