@@ -130,7 +130,7 @@ I had several issues while trying to get it though:
 
 I originally tried to receive it in early March, but kept failing because of sample drops. I gave it another try later, and finally succeeded in getting a clean image all the way until it stopped transmitting! It was surreal seeing true color imagery, having been used to the (comparatively) ugly false color composites back then. It was even more surreal thinking about how I got them myself - the only other way was X-band which felt like absolute unobtanium back then!
 
-![As described below](../../assets/images/three-years-of-satrx/true-color-3c.jpg)
+![As described below](../../assets/images/three-years-of-satrx/true-color-3c.jpg) <br>
 *My first good FengYun-3C AHRPT reception, received on 16/03/2024 at 13:16Z from Eastern Slovakia with a 130 cm dish, SawBird GOES+ and a HackRF. Processed using SatDump with the `197` (True Color) preset. 80% quality JPEG-compression applied, border overlay applied.*
 
 ## Lizard intermission
@@ -141,7 +141,7 @@ I was receiving some FengYun-2H S-VISSR at this day with my niece, between time 
 
 This has no real relation to satellite reception. I just thought it was cool.
 
-![Two lizards on two hands. Is the image doctored or do I have two right hands? We'll never know!](../../assets/images/three-years-of-satrx/cool-lizards.jpg)
+![Two lizards on two hands. Is the image doctored or do I have two right hands? We'll never know!](../../assets/images/three-years-of-satrx/cool-lizards.jpg) <br>
 *Two incredibly chilled out lizards I caught while waiting for the next FY-2H slot.*
 
 ## S-band  part one
@@ -208,7 +208,7 @@ The original implementation was written in python and is still available [here](
 
 TL;DR I made imagery have less black lines in it.
 
-![As described below](../../assets/images/three-years-of-satrx/GVAR-pre-post-corr.jpg)
+![As described below](../../assets/images/three-years-of-satrx/GVAR-pre-post-corr.jpg) <br>
 *An unknown reception before and after correction was applied. RX is likely from Zbychu, GOES-13; I genuinely can't remember.*
 
 > Kudos to Zbychu for helping with the brainstorming
@@ -230,10 +230,10 @@ It was about at this time when I found out, that the issue was in **the SDR's ph
 
 I later empirically confirmed this on 11/2024 by testing a HRIT slot with both SDRs, swapping them mid-transmission:
 
-![As described below](../../assets/images/three-years-of-satrx/RTL-HRIT.jpg)
+![As described below](../../assets/images/three-years-of-satrx/RTL-HRIT.jpg) <br>
 *SatDump decoding Elektro HRIT with an RTLSDR. See the SNR is at 4.2 dB. AGC is on but the SDR was not overloading.*
 
-![As described below](../../assets/images/three-years-of-satrx/HackRF-HRIT.jpg)
+![As described below](../../assets/images/three-years-of-satrx/HackRF-HRIT.jpg) <br>
 *SatDump also decoding Elektro HRIT but this time with a HackRF. Notice how the SNR is almost 2 dB worse! No, the filter did not impact the SNR, 2 MHz and above read the same. Higher sampling rates did not help either. The SDR was not overloading.*
 
 ## HRIT euphoria
@@ -271,14 +271,14 @@ The results were not great but also not terrible, are accessible [here](https://
 
 Having made several helixes by now and seeing what made SNR better and worse, I made what was one of my best helixes to date:
 
-![A picture of said helix in my hand](../../assets/images/three-years-of-satrx/helix.jpg)
+![A picture of said helix in my hand](../../assets/images/three-years-of-satrx/helix.jpg) <br>
 *The feed used 2/8/2024 through 18/2/2025. Designated as V5*
 
 Using a gritty zinc spray as the surface finish and hot glue as the support, I think it looks rather clean. It gave me about a dB better SNR than my previous iterations, especially since I actually took care of the spacing this time around with a caliper.
 
 Compared to my first helix, I think it shows that I actually started understanding what I was doing.
 
-![A picture of my first helix for reference](../../assets/images/three-years-of-satrx/First-helix.jpg)
+![A picture of my first helix for reference](../../assets/images/three-years-of-satrx/First-helix.jpg) <br>
 *My first helix from 12/2023 for reference, made on 28/12/2023. Designated as V0 as it fell apart within minutes.*
 
 > If you've been keeping track of the version numbers, you might have noticed that I skipped V4. This is because it wasn't very interesting - it was just V3 with the stand cut off. It was used 07/06/2024 - 02/08/2024
@@ -291,7 +291,7 @@ Being enamored with the idea of having a station of some kind on my own, I final
 
 Even though it was difficult to make, I decided to give it a shot. After a few hours of work, I erected it and... It sucked! What was wrong?
 
-![As described below](../../assets/images/three-years-of-satrx/QFH-fixture-wrongpol.jpg)
+![As described below](../../assets/images/three-years-of-satrx/QFH-fixture-wrongpol.jpg) <br>
 *The fixture which performed very poorly. If you know anything about these, you can probably see the issue already.*
 
 If you read my VHF guide, you already got a clue with the big disclaimer next to these. **I done wired it up the wrong way.** Instead of going clockwise [looking top-down], I twisted the wire counter-clockwise. This inverted the polarization, essentially completely nullifying the signal. It took me embarrassingly long to realize this. At least I pay extra attention to polarization now! ~~If I had a nickel for every time I spotted someone messing the polarization of their antenna up, i'd have.. a few nickels.~~
@@ -310,7 +310,7 @@ I couldn't figure out a way to run SatDump reliably without drops yet on my Rasp
 
 Another quickie, between these major bullet points I was always doing the odd HRPT. One day I decided to map out the coverage I can get from LEO satellites from my QTH (location) by projecting all passes I had from that day, with this being the result:
 
-![As described below](../../assets/images/three-years-of-satrx/QTH-Projection.jpg)
+![As described below](../../assets/images/three-years-of-satrx/QTH-Projection.jpg) <br>
 *A projection of roughly 6 passes including NOAA HRPT+APT, FengYun-3C AHRPT. All passes were received on 6/8/2024. 80% quality JPEG compression applied.*
 
 Seeing this amount of coverage was the first seed for the idea of making a big projection. No spoilers though (:
@@ -325,7 +325,7 @@ Right after arriving home I went over to the neighbor who just so happened to be
 
 > This does bring up the idea of how many of these might be found in random peoples' backyards... Food for thought.
 
-![A picture of the dish described above](../../assets/images/three-years-of-satrx/New-PF.jpg)
+![A picture of the dish described above](../../assets/images/three-years-of-satrx/New-PF.jpg) <br>
 *The dish in question. Nice and straight - perfect for my uses!*
 
 Being a prime focus instead of an offset, it was stupid easy to get the focal point right. In addition, it was stupid easy to skew as it had no right way up. This is where I realized the mistake I have been making with my offset all along - not skewing the feed!
@@ -353,7 +353,7 @@ I decided to give S-band another shot on this day, seeing as the summer was abou
 
 I remade the helix to be a bit more sturdy, tried a new position for the dish. While not great, it was an improvement on the first S-band attempts from July - I even got a bit of NOAA GAC!
 
-![Horizontal strip of AVHRR channel 1](../../assets/images/three-years-of-satrx/GAC-strip.jpg)
+![Horizontal strip of AVHRR channel 1](../../assets/images/three-years-of-satrx/GAC-strip.jpg) <br>
 *Horizontal AVHRR channel 1 from an unknown NOAA received on 31/8/2024 at 19:59Z. For whatever reason I only have the image files and no dataset nor .cbor file I could use to properly project it. Darn!*
 
 ## Night projection
@@ -379,7 +379,7 @@ Elmarko and I started doing research into how we could get as much coverage as p
 
 I primarily worked on the spreadsheets and tracking availability, whereas others worked on getting the contacts and actually projecting the data. Eventually we only ended up projecting 30/11 because there was a lot of missing data from 01/12 from a lot of locations. The 30/11 projection result is, however, absolutely stunning:
 
-![As described below.](../../assets/images/three-years-of-satrx/Megaprojection.jpg)
+![As described below.](../../assets/images/three-years-of-satrx/Megaprojection.jpg) <br>
 *Megaprojection of NOAA-18 and Meteor M2-4 passes on 30/11/2024. Full credits as well as a project description are both available [here](https://docs.google.com/spreadsheets/d/1TKlwnO8NY7tNF7BB8cw_VnUSPreX-nwFG8gQBDQxMMY/edit?gid=1466359569#gid=1466359569)*
 
 Organizing this was a lot of fun, but it is unlikely to happen again as it specifically used the fact that NOAA-18 + Meteor M2-4 orbits are shifted in phase by 180° - one passes North in the afternoon whereas the other passes South. This greatly improved the coverage each station got. Unless similar satellites are launched in the future, I don't think a project like this will be AS feasible as back then. **But you know what they say - never say never (:**
@@ -410,7 +410,7 @@ In December 2024, I went on a trip to visit my family in Australia. Naturally, I
 
 Initially, I had no dish. So I began with what you'd expect; GK-2A LRIT. I was pleasantly surprised by how ridiculously strong it was - dropping my helix randomly without any effort pointing already had enough SNR to decode imagery!
 
-![A picture of my helix on the ground, connected to my tablet which has SatDump open while decoding GK2A LRIT.](../../assets/images/three-years-of-satrx/GK2A-LRIT-setup.jpg)
+![A picture of my helix on the ground, connected to my tablet which has SatDump open while decoding GK2A LRIT.](../../assets/images/three-years-of-satrx/GK2A-LRIT-setup.jpg) <br>
 *3 dB on GEO-KOMPSAT-2A LRIT from a helix I randomly placed on the ground, and that's with a HackRF!*
 
 The only imagery that is transmits is a simple 10.8 um IR, only really usable for a few composites:
@@ -487,7 +487,7 @@ TODO: recovered images here
 Given that GRB didn't work properly, I at least got some hilariously strong Elektro-L4 HRIT:
 
 
-![As described below](../../assets/images/three-years-of-satrx/Strong-L4-HRIT.jpg)
+![As described below](../../assets/images/three-years-of-satrx/Strong-L4-HRIT.jpg) <br>
 *SatDump decoding Elektro-L HRIT at a peak of 13 dB. CRC errors were a problem on the satellite side*
 
 I finished the trip with some more GOES HRIT.
@@ -539,7 +539,7 @@ It turns out the stupid, idiotic, useless, horribly designed bane of my existenc
 As I learned way too late, the flux I have been relying on is not just bad, it was **awful**.
 
 
-![A picture of the Airspy covered in Kapton tape.](../../assets/images/three-years-of-satrx/Surgery-patient.jpg)
+![A picture of the Airspy covered in Kapton tape.](../../assets/images/three-years-of-satrx/Surgery-patient.jpg) <br>
 *The patient, mid-operation. I was still following all proper safety precautions at this time; hence all the Kapton tape.*
 
 Resoldering the USB felt impossible - the connection KEPT dropping whenever I bumped the port. No matter how many reflows I did or how much flux I added, the solder still remained brittle and never made good contact. The fake RMA223 might have been fine for other projects, but it was no match for the tiny USB pins.
@@ -632,7 +632,7 @@ And the final image I ever received:
 
 Being the first satellite I ever managed to receive, this was a quite sentimental pass. May NOAA-18 rest in peace.
 
-![First APT picture I ever received](../../assets/images/Sat-reception-journey/First-APT-I-got.jpg)
+![First APT picture I ever received](../../assets/images/Sat-reception-journey/First-APT-I-got.jpg) <br>
 *My first image received from a satellite - NOAA 18 received on 12/10/2023. I felt it was appropriate to include it again.*
 
 
@@ -801,7 +801,7 @@ With the NOAA-15 decommissioning happening on this day, this would be the last A
 *The setup used to receive it*
 
 
-![As described below](../../assets/images/three-years-of-satrx/N15_2025-08-19_15-16Z.jpg)
+![As described below](../../assets/images/three-years-of-satrx/N15_2025-08-19_15-16Z.jpg) <br>
 *The final APT image received by me from NOAA-15 on 19/8/2025 at 15:16Z using a Yagi-Uda antenna, SAW BPF+LNA 137 MHz, and Nooelec SMART SDR V5. 80% quality JPEG compression applied. Full pass including baseband is available [here](https://sat-archive.metislair.com/VHF/NOAA%20POES/APT/NOAA-15/2025-08-19_15-16_noaa-apt_Meti/)*
 
 As it turns out this decommissioning failed with the satellite restarting during the following orbit, meaning I could have caught some empty APT in the next few orbits. However, I didn't expect it, so I didn't try. By the time the community learned of this, the satellite was already double-tapped by NOAA.
@@ -926,7 +926,7 @@ The first thing I checked was the Teflon depolarizer - a little piece of plastic
 
 Having pushed the depolarizer back in, I checked Syracuse telemetry again. It showed 8 dB. An improvement! But still WAY below expectations. Having heard about L2 RDAS being incredibly strong, I gave that a quick test, giving me my first X-band image:
 
-![As described below](../../assets/images/three-years-of-satrx/L2_2026-05-12_19-07Z_crap.jpg)
+![As described below](../../assets/images/three-years-of-satrx/L2_2026-05-12_19-07Z_crap.jpg) <br>
 *Elektro-L2 RDAS channel 1 received on 5/12/2025 at 19:07Z by yours truly using an 80 cm offset dish, waveguide feed, Digitelektro X-band LNA, SatDump v2 LNC (prototype), HamGeek Zynq7020. Compressed. Full resolution image available [here](https://static.metislair.com/Three-years-of-satrx-assets/first-x-pic_L2_05-12-2025_17-00z_ch1.png)*
 
 Seeing as I was getting a measly 5 dB, I only let the reception run for a few seconds before ending it.
@@ -937,7 +937,7 @@ Checking Look4sat, I saw FengYun-3G was about to pass, so I jumped on that oppor
 Being known for its ridiculously strong signal, I managed to catch it at a surprisingly decent 11 dB. This was plenty to get me my second X-band image:
 
 
-![As described below](../../assets/images/three-years-of-satrx/fengyun3g_5-12-2025_avhrr543b_quarterres.jpg)
+![As described below](../../assets/images/three-years-of-satrx/fengyun3g_5-12-2025_avhrr543b_quarterres.jpg) <br>
 *FengYun-3G AHRPT received on 5/12/2025 at 19:07Z 80 cm offset dish, waveguide feed, Digitelektro X-band LNA, SatDump v2 LNC (prototype), HamGeek Zynq7020. 90% quality JPEG compression applied, resized  to 25%. Processed with SatDump using the `AVHRR 543b` composite, rotated 270°, individually equalized, map overlay added. Full resolution image and pass .cadu are available [here](https://sat-archive.metislair.com/X-band/FengYun-3/AHRPT/FengYun-3G/2025-12-05_19-07_fengyun3-g-ahrpt_Meti/)*
 
 Surprisingly good image! FengYun-3G's orbit makes it incredibly fast, tracking X-band for my first time was **humbling**. Choosing 3G didn't do that any wonders either!
@@ -972,11 +972,11 @@ I won't include full resolution links for a lot of X stuff, as I am not at home 
 
 A quickie, on New Year's Eve 2026, a freak snow storm occurred in Eastern Slovakia. A pass from the 30th captured it very well:
 
-![As described below](../../assets/images/three-years-of-satrx/FY3D_2025-12-30_13-53Z.jpg)
+![As described below](../../assets/images/three-years-of-satrx/FY3D_2025-12-30_13-53Z.jpg) <br>
 *FengYun-3D AHRPT received on 30/12/2025 at 13:53Z using a 130 cm offset dish, waveguide feed, Digitelektro X-band LNA, SatDump v2 LNC (prototype), HamGeek Zynq7020. Processed with Satdump using the `True color` composite, individually equalized.*
 
 A closer crop:
-![As described below](../../assets/images/three-years-of-satrx/fy3d_30-12-2025_13-53_tc-crop_quarterres.jpg)
+![As described below](../../assets/images/three-years-of-satrx/fy3d_30-12-2025_13-53_tc-crop_quarterres.jpg) <br>
 *Same image as above, just cropped to Eastern Europe. Full resolution available [here](https://static.metislair.com/Three-years-of-satrx-assets/fy3d_30-12-2025_13-53_tc-crop.png)*
 
 # 2026
@@ -993,7 +993,7 @@ Being a bit irked with the limited bandwidth of my HamGeek SDR (The most I could
 
 Just days prior, Mothmaux managed to release the firmware mod that allowed 122 Msps like with the BladeRFs - I immediately jumped on it, following Seler1500's guide to perform the mod on SatDump. A bit of effort later, it worked perfectly!  
 
-![As described below](../../assets/images/three-years-of-satrx/metopsg_2026-03-01_09-57_lowres.jpg)
+![As described below](../../assets/images/three-years-of-satrx/metopsg_2026-03-01_09-57_lowres.jpg) <br>
 *Metop-SGA1 DB received on 1/3/2026 at 09:57Z using a 130 cm offset dish, waveguide feed, Digitelektro X-band LNA, SatDump v2 LNC (prototype), LibreSDR B210. Processed with Satdump using the `True color` composite, individually equalized. 80% quality JPEG compression applied, resized to 12.5%. Full resolution image as well as complete pass are available [here](https://sat-archive.metislair.com/X-band/MetOp-SG/DB/MetOp-SGA1/2026-03-01_09-57_metopsg-db_Meti/)*
 
 MetOp-SG has a data rate of 93.3 Msym/s, meaning I wasn't able to receive it without the mod working well. Even though the satellite sucks (the striping is horrible on all infrared channels), it is cool that I am able to receive it at all (:
@@ -1029,7 +1029,7 @@ Honestly, it pleasantly surprised me! Every prior SNPP reception went horribly b
 
 The best pass of the day was the third and last NOAA-21:
 
-![As described below](../../assets/images/three-years-of-satrx/N21_aurora_07-03-2026_DNB_quarterres.jpg)
+![As described below](../../assets/images/three-years-of-satrx/N21_aurora_07-03-2026_DNB_quarterres.jpg) <br>
 *NOAA-21 received on 7/3/2026 at 01:39Z using a 130 cm offset dish, waveguide feed, Digitelektro X-band LNA, SatDump v2 LNC (prototype), LibreSDR B210. Processed using SatDump with the `DNB Night` composite, border overlay added. 90% quality JPEG compression applied, resized to 25%. Full resolution image is available [here](https://static.metislair.com/Three-years-of-satrx-assets/N21_aurora_07-03-2026_DNB.png). Full pass is available [here](https://sat-archive.metislair.com/X-band/NOAA-JPSS/NOAA-21/2026-03-07_01-39_jpss-2-hrd_Meti/).*
 
 It easily took the cake for my all-time favorite satellite image I ever received. 
@@ -1105,7 +1105,7 @@ The group I went with was full of incredible people who were a blast to be aroun
 
 Some photos I took:
 
-![A picture of the SatDump booth at FDH 2026](../../assets/images/three-years-of-satrx/FDH-SatDump-booth.jpg)
+![A picture of the SatDump booth at FDH 2026](../../assets/images/three-years-of-satrx/FDH-SatDump-booth.jpg) <br>
 *The SatDump booth at FDH 2026*
 
 ![As described below](../../assets/images/three-years-of-satrx/FDH-Flea-market.jpg) <br>
