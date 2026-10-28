@@ -1173,7 +1173,7 @@ It is currently my primary way of receiving L-band satellites. I am looking into
 
 So, we've reached the end. As corny as it might be, I want to be honest here. I am really glad I got to sit down and write this when I did.
 
-Because of some recent actions by certain individuals, the future of this hobby is the most uncertain it's ever been. The places I used to enjoy staying in have become barren, toxic, or a sad mix of both. It's gotten quite bad as of late.
+Because of some recent actions by certain individuals as wel as general trends in tech, the future of this hobby is the most uncertain it's ever been. The places I used to enjoy staying in have become barren, toxic, or a sad mix of both. It's gotten quite bad as of late.
 
 I considered quitting at several points, because why bother when everything around you is so negative? It felt like that is how the hobby is going to be going forward, which is a very depressing thought.
 
