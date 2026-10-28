@@ -1072,7 +1072,7 @@ To replace it, I bought a ThinkPad E14 G7 with a Lunar Lake CPU from Intel - hon
 
 06/2026
 
-My friend, Seler1500, sent me their LNAs to test S-band with in this month. As I already had a B210 SDR capable of natively receiving 2.2 GHz, I could use a direct amplifier setup without any downconversion. I specifically asked her to send a version with two SAW filters hoping to cut off as much noise as possible (as S-band was very noisy where I live).
+My friend Seler1500 sent me their LNAs to test S-band with in this month. As I already had a B210 SDR capable of natively receiving 2.2 GHz, I could use a direct amplifier setup without any downconversion. I specifically asked her to send a version with two SAW filters hoping to cut off as much noise as possible (as S-band was very noisy where I live).
 
 After testing S-band with what I knew to be half-decent LNAs (from others' tests), I finally ruled out crappy MMDS receivers being the reason my S-band has sucked. As it turns out, my QTH is simply crap. There is too much LTE noise everywhere, completely drowning any weak satellite signals out below a 20° elevation. For once, it wasn't my craftsmanship being at fault. *Woo*
 
