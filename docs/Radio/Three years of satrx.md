@@ -107,7 +107,7 @@ This was a simple piggy bank with an SMA probe on one side. I swear by cantennas
 
 Ignoring the focal point suggestions (left side is how it is supposed to be, the second picture was my original setup where it was mounted to the bottom of the bracket) and not knowing that I have to skew the feed to receive things properly, I received everything at a very poor SNR. At that time the EWS-G2 decoder was unable to work with the 4 dB I had on GVAR, so I switched to S-VISSR instead. It yielded me roughly 6 dB, which was enough to get clean imagery when paired with [Foxik's S-VISSR corrector](https://github.com/Foxiks/fengyun2-svissr-corrector).
 
-Not having a stand, I instead leaned the dish up against a tree and sat next to it for the whole duration of the image in order to keep it stable. I decided I only wanted the first images of the hour as they were full-disks. So, I sat next to the dish every hour from XX:00 through XX:30, after which I went inside for 30 minutes. I did this for 7 consecutive time slots. *Talk about dedicatoin!*
+Not having a stand, I instead leaned the dish up against a tree and sat next to it for the whole duration of the image in order to keep it stable. I decided I only wanted the first images of the hour as they were full-disks. So, I sat next to the dish every hour from XX:00 through XX:30, after which I went inside for 30 minutes. I did this for 7 consecutive time slots. *Talk about dedication!*
 
 Having the hindsight of 2026, I now know that skewing the dish properly and having the cantenna in the correct spot would have given me roughly 12 dB. D'oh!
 
@@ -1053,7 +1053,7 @@ I tried replacing the SMA bracket I used, but it made no change. At the end of m
 
 I did so, it turned out the first stage of the LNA was acting weird, and that the SMA on the feed wasn't of very good quality. After he replaced both (Very grateful for that!), everything started to work fine. Finally, I could receive stuff reliably again. Hooray! 
 
-> Maresz was, of course, made aware of this. He promptly stopped using the brand of SMA connectorsô
+> Maresz was, of course, made aware of this. He promptly stopped using the brand of SMA connectors
 
 ![A picture of SatDump showing a wildly oscillating FFT](../../assets/images/three-years-of-satrx/Oscillating-lna.jpg) <br>
 *The oscillations in question. Trippy!*
@@ -1175,7 +1175,7 @@ It is currently my primary way of receiving L-band satellites. I am looking into
 
 So, we've reached the end. As corny as it might be, I want to be honest here. I am really glad I got to sit down and write this when I did.
 
-Because of some recent actions by certain individuals as wel as general trends in tech, the future of this hobby is the most uncertain it's ever been. The places I used to enjoy staying in have become barren, toxic, or a sad mix of both. It's gotten quite bad as of late.
+Because of some recent actions by certain individuals as well as general trends in tech, the future of this hobby is the most uncertain it's ever been. The places I used to enjoy staying in have become barren, toxic, or a sad mix of both. It's gotten quite bad as of late.
 
 I considered quitting at several points, because why bother when everything around you is so negative? It felt like that is how the hobby is going to be going forward, which is a very depressing thought.
 
