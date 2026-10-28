@@ -1179,7 +1179,9 @@ I considered quitting at several points, because why bother when everything arou
 
 As a friend once put it, it is easy to see all the bad and miss all the good. You tend to look over good happenings because they fade into the background, whereas the stuff that stings ends up sticking. Because of said recent actions, I grew a huge distaste for the hobby as I felt like it was incredibly negative and just hurting me as a person. Writing everything out in here has made me realize just how much good there's actually been, and honestly restored the faith I needed to continue.
 
-Even though the future is uncertain, I am incredibly grateful for the 3 years I got to spend doing this hobby. Nothing can take away these years of fun memories and experiences away. Even though some parts of this hobby may be lost to time and some people might not be around anymore, it doesn't mean that I shall stop enjoying it. At the end of the day this is still a fun pastime of mine which I still do and will keep seeing the fun in. Here's to another year of fun.
+Even though the future is uncertain, I am incredibly grateful for the 3 years I got to spend doing this hobby. Nothing can take away these years of fun memories and experiences away. Even though some parts of this hobby may be lost to time and some people might not be around anymore, it doesn't mean that I shall stop enjoying it. At the end of the day this is still a fun pastime of mine which I still do and will keep seeing the fun in. I wholeheartedly thank everyone who has made that possible (: 
+
+Here's to another year of fun.
 
 > "Dance through the darkness" <br>
 > \~ Jack Abbot, *The Pitt*
