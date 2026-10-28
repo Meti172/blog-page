@@ -12,6 +12,8 @@ In March 2024, I wrote a [blog post]({{site.baseurl}}/docs/Radio/Sat reception j
 
 Now, as of writing this sentence, we are in October 2026. I noticed that my 3-year satrx anniversary was just last week - given this milestone, I felt like it would be appropriate to give this a shot now.
 
+> Another reason I started writing this is simply, that I would definitely enjoy reading a similar post from someone else. I think it's cool to see the kinds of goofy stuff and mistakes that people have made in the past
+
 This page will start where the previous one left off, 02/2024, and go up to today (10/2026). The goal is to describe what I experimented with and achieved for bookkeeping, and to feed your curiosity if you want to see what two and a half years of satrx involved. 
 
 ![First APT picture I ever received](../../assets/images/Sat-reception-journey/First-APT-I-got.jpg)
@@ -983,7 +985,7 @@ Finally, we're in the current year. Not long to go!
 
 Having gotten an X-band setup going, I focused on perfecting its performance as well as just generally just getting as many passes as I could.
 
-## LibreSDR B210
+## LibreSDR B210
 
 28/2/2026
 
