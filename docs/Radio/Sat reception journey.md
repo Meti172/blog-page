@@ -6,6 +6,9 @@ parent: Radio
 ---
 
 # Preamble
+
+> NOTE: The last time I updated this guide was in 04/2024, a **lot** has happened since, and I now know that a lot of what is said here might not necessarily be true. Take any stuff with a grain of salt! I decided to preserve this file as-is for memory's sake.
+
 This file will describe the journey I took while falling down the radio rabbit hole - the highs and lows and everything in-between. Why you would want to read this? I got no bloody idea. I guess it might be fun seeing, what the modern satellite reception experience is like. At the very least, this page will act as an archive of what I have done.
 
 # Initial exposure
@@ -90,7 +93,8 @@ I had initially hoped, that the generic wideband LNA was going to be good enough
 # First L-band attempts
 My first setup was absolute jank galore: Awful helix, piss poor soldering job, glue drizzled all over the reflector, awful tracking skills, all with the LNA and SDR sticking out the rear with the whole setup hanging on a tiny SMA port (This came back to bite me in me arse later down the road). I think you can imagine what I got
 
-![A picture of the jankiest helix you have ever seen](../../assets/images/Sat-reception-journey/God-awful-first-helix.jpg)
+![A picture of the jankiest helix you have ever seen](../../assets/images/Sat-reception-journey/God-awful-first-helix.jpg) <br>
+*V1 of my helix used 28/12/2025 - 31/12/2025*
 
 It felt like the signal was just out of reach - I could even see the carrier wave! (Spoiler: It wasn't. It was actually far, FAR out of reach.)
 
@@ -98,6 +102,8 @@ It felt like the signal was just out of reach - I could even see the carrier wav
 *Pictured is SatDump, on the awfully set up FFT you can see the barely visible carrier and spikes of the BPSK HRPT broadcast I was attempting to get.*
 
 I initially believed it was a helix issue, which it partially was - I put glue all over it completely disregarding, that **the reflector should remain as clear as possible to be as effective as possible**. After heating up a knife and melting some of the hot glue off, redoing the solder job, and mounting the SMA port to the reflector properly using an SMA nut (Thanks for the suggestion, Ryzerth), the signal grew strong enough to even get a few frames!
+
+> Note from future: The helix with the removed glue was designated as V2. It was used 31/12/2023 - 09/02/2024
 
 ![A newer SatDump screenshot, now showing a much stronger albeit still useless HRPT signal](../../assets/images/Sat-reception-journey/New-helix-who-this.jpg)
 *See the peak SNR now showing a number other than 0, same with the frames*
@@ -203,7 +209,7 @@ After having my fair share of fun, I decided it was time to move on from the 90 
 After receiving the dish (Which was a whole endeavor on its own), remaking my helix once again and mounting my HRPT setup to it, I managed to get a much stronger Elektro-L LRIT broadcast (8 dB compared to just 3 dB prior), HRPT went up to 24 dB from 17 dB. It is definitely needed for what's to come (:
 
 ![New helical feed](../../assets/images/Sat-reception-journey/New-helical-feed.jpg) <br>
-*A picture of the new helical feed, with a much higher production quality. Soldering job still had room for improvement.*
+*A picture of the new helical feed, with a much higher production quality. Soldering job still had room for improvement. Designated as V3, used 09/02/2024 - 07/06/2024*
 
 ![Picture of my HRPT setup from February](../../assets/images/Sat-reception-journey/Current-HRPT-setup.jpg)
 *My HRPT setup at that time*
@@ -231,14 +237,14 @@ Looking at my options, they were extremely limited - good SDRs at the 100€ pri
 - The MiriSDR, a surprisingly capable and cheap SDR (Even though it is quite deaf, requiring an additional LNA) from AliExpress clocking in at 10 Msps. Close, but still not enough.
 - The one and only... HackRf clone. 
 
-If you don't know much about it, you might call me a moron for WILLINGLY buying a clone, but the SDR is actually nothing short of incredible! I got a version redesigned by *Clifford Heath* an engineer who made it much more resilient to accidents as well as making the frontend amplifier actually usable. Not only was it arguably better than the original, it was also priced at a **third (!)** of the original while having the aforementioned protections.
+If you don't know much about it, you might call me a moron for WILLINGLY buying a clone, but the SDR is actually nothing short of incredible! I got a version redesigned by *Clifford Heath*, an engineer who made it much more resilient to accidents as well as making the frontend amplifier actually usable. Not only was it arguably better than the original, it was also priced at a **third (!)** of the original while having the aforementioned protections.
 
 But the main selling point of the Hackrf? Not only is it fully capable of doing satellite stuff, it can even pull a relatively monstrous **20 Msps!** This is far more than enough for almost any application I can try in the future, excluding some insane 30 Msps satellites. Future-proofing FTW!
 
 
 # Notice
 
-The last time I updated this guide was in mid 2024, a **lot** has happened since. I will consider this file my archaic era of satrx, will make a new and more concise one containing my more modern achievements.
+As was mentioned earlier, this file is heavily outdated and stops around circa 02/2024. I've released a second page describing 02/2024 through 10/2026 [here]({{site.baseurl}}/docs/Radio/Three years of satrx.html)
 
 # Special thanks
 I have to give huge props to the following people and communities who have helped me get where I am right now. I sincerely thank everyone listed here from the bottom of my heart for being patient with me and my dumb questions.
