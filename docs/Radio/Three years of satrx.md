@@ -30,13 +30,6 @@ For the sake of consistency and remaining at least somewhat legible, I will try 
 
 Additionally, a DD/MM/YYYY format will be used within this article.
 
-
-A table of significant contents can be found below for your convenience.
-
-# Significant events
-TODO:FIJNISH
-- 12/2025 - [First X-band]
-
 # 2024
 
 Having started with this hobby in 10/2023, I really didn't know much yet in 2024. This made the year very experimental - I was trying out whatever came to my mind rather spontaneously.
@@ -402,7 +395,7 @@ I got it back a few weeks later and got to test it on 24/11/2024, where I got ex
 
 
 
-## Dishless Australia
+## Dishless Australia {#2025-start}
 
 12/2024
 
@@ -411,12 +404,12 @@ In December 2024, I went on a trip to visit my family in Australia. Naturally, I
 Initially, I had no dish. So I began with what you'd expect; GK-2A LRIT. I was pleasantly surprised by how ridiculously strong it was - dropping my helix randomly without any effort pointing already had enough SNR to decode imagery!
 
 ![A picture of my helix on the ground, connected to my tablet which has SatDump open while decoding GK2A LRIT.](../../assets/images/three-years-of-satrx/GK2A-LRIT-setup.jpg) <br>
-*3 dB on GEO-KOMPSAT-2A LRIT from a helix I randomly placed on the ground, and that's with a HackRF!*
+*3 dB on GEO-KOMPSAT 2A LRIT from a helix I randomly placed on the ground, and that's with a HackRF!*
 
 The only imagery that is transmits is a simple 10.8 um IR, only really usable for a few composites:
 
 ![As described below](../../assets/images/three-years-of-satrx/GK2A_2024-12-28_18-50.jpg) <br>
-*GEO-KOMPPSAT-2A LRIT received on 28/12/2024 at 18:50Z by yours truly using a 5 turn helix dropped on the ground, SawBird GOES+, HackRF One. Processed using SatDump with the `Clean Longwave IR Window Band` composite. 80% quality JPEG compression applied, resized 50%. Click [here](https://sat-archive.metislair.com/L-band/GEO-KOMPSAT/LRIT/GEO-KOMPSAT-2A/2024-12-28_08-50_gk2a-lrit_Meti/ami_Clean%20Longwave%20IR%20Window%20Band.png) for the full resolution image.*
+*GEO-KOMPSAT 2A LRIT received on 28/12/2024 at 18:50Z by yours truly using a 5 turn helix dropped on the ground, SawBird GOES+, HackRF One. Processed using SatDump with the `Clean Longwave IR Window Band` composite. 80% quality JPEG compression applied, resized 50%. Click [here](https://sat-archive.metislair.com/L-band/GEO-KOMPSAT/LRIT/GEO-KOMPSAT-2A/2024-12-28_08-50_gk2a-lrit_Meti/ami_Clean%20Longwave%20IR%20Window%20Band.png) for the full resolution image.*
 
 It also transmits some other miscallenous data, some of which you can view [here](https://sat-archive.metislair.com/L-band/GEO-KOMPSAT/LRIT/GEO-KOMPSAT-2A/2024-12-28_09-06_gk2a-lrit_Meti/ADD/).
 
@@ -1074,7 +1067,7 @@ To replace it, I bought a ThinkPad E14 G7 with a Lunar Lake CPU from Intel - hon
 
 My friend Seler1500 sent me their LNAs to test S-band with in this month. As I already had a B210 SDR capable of natively receiving 2.2 GHz, I could use a direct amplifier setup without any downconversion. I specifically asked her to send a version with two SAW filters hoping to cut off as much noise as possible (as S-band was very noisy where I live).
 
-After testing S-band with what I knew to be half-decent LNAs (from others' tests), I finally ruled out crappy MMDS receivers being the reason my S-band has sucked. As it turns out, my QTH is simply crap. There is too much LTE noise everywhere, completely drowning any weak satellite signals out below a 20° elevation. For once, it wasn't my craftsmanship being at fault. *Woo*
+After testing S-band with what I knew to be half-decent LNAs (from others' tests), I finally ruled out crappy MMDS receivers being the reason my S-band has sucked. As it turns out, my QTH is simply crap. There is too much NR (5G) noise everywhere, completely drowning any weak satellite signals out below a 20° elevation. For once, it wasn't my craftsmanship being at fault. *Woo*
 
 > S might be unusable but **at least my L spectrum is clean!**
 
