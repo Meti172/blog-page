@@ -163,11 +163,11 @@ These apply to all SDRs using RTL chipsets (RTLSDR blog, Nooelec SMART...)
 \* Some older satellites might have an increased inclination, where they slowly move in an 8 shape throughout a day. They still maintain a consistent longitude though.
 <br>
 
-- There are **14** geostationary satellites broadcasting imagery in this band:
+- There are **13** geostationary satellites broadcasting imagery in this band:
     - 2x GOES in the US
     - 1x EWS-G in Europe and Asia (Retired GOES)
-    - 2x Elektro-L in Europe, Asia and Oceania
-    - 5x FengYun in Asia and Oceania
+    - 3x Elektro-L in Europe, Asia and Oceania
+    - 3x FengYun in Asia and Oceania
     - 1x Geo-Kompsat in Asia and Oceania
     - 3x MSG in Europe
 
@@ -265,29 +265,30 @@ These apply to all SDRs using RTL chipsets (RTLSDR blog, Nooelec SMART...)
 
 ### Elektro-L
 
-> !Warning! - Due to the commissioning process of Elektro-L N°5, N°3 transmissions are PAUSED. L5 currently sporadically transmits LRIT/HRIT at inconsistent times around 8 UTC.
+- ~~**Elektro-L N°3**~~, **Elektro-L N°4**, and **Elektro-L N°5** (Elektro-L# or just L# for short) are the 3 satellites from the Elektro-L series currently transmitting image data. 
+- They broadcast three distinct signals:
+  - **Low Rate Information Transmission (LRIT)** - Any number of channels, on L3 and L5 it is always the three visible ones (1,2,3), a water vapour (4) and an infrared (9). L4's selection is seemingly random. Transmits every 3 hours midnight starting at 00:42.
+  - **High Rate Information Transmission (HRIT)** - A weaker but higher rate transmission which contains all satellite channels with full calibration data. Transmits every 3 hours midnight starting at 00:12.
+  - **GGAK** - SEM data from its GGAK instrument suite, is commonly used in Europe to verify setup functionality. Strength differs between the satellites. Not decoded due to a lack of data (even though several sources claim to have done so with fake results)
 
-- ~~**Elektro-L N°3**~~ and **Elektro-L N°4** (Elektro-L# for short) are the two satellites from the Elektro-L series broadcasting imagery in the L-band. Due to a power supply failure, Elektro-L2 only broadcasts a beamed X-band transmission to Moscow.
-- They broadcast **Low Rate Information Transmission (LRIT)** as well as **High Rate Information Transmission (HRIT)** signals containing full disc images of the earth at a 4 km/px quality. Both of these include Reed-Solomon FEC, meaning you can get clear imagery at just ~2.5 dB.
-- LRIT broadcasts any number of channels, for Elektro-L3 it's 3 visible channels, one water vapor channel (degraded), as well as one infrared channel. L4 broadcasts channels too inconsistently to be specified here.
-- The 06:XX and 18:XX time slots are seasonal, both should be active during summer and winter months
+> - LRIT and HRIT are often abbreviated to xRIT - the 'x' is exchanged for L and H respectively.
+> - xRIT's 06:XX and 18:XX time slots are seasonal, both should be active during summer and winter months
+
+- With the launch of L5, L3 was moved to replace L2 which was suffering from power and imager issues. L3 is now transmitting xRIT in the 14.5°W slot, the first time the majority of Europe has had reliable xRIT in 8 years.
 - Real-time and historical Elektro (as well as Arktika) data is available on the NTSoMZ FTP: `ftp://electro:electro@ntsomz.gptl.ru:2121/`
-- Elektro-L3 often skips timeslots for unknown reasons, Tecmsat has a station which tracks missing transmissions [here](https://tec.aweeri.com/L3TS.php).
 
-> Elektro-L N°5 has launched and is in the process of commissioning, which should finish in the coming few weeks/months. Once commissioning is done, it is scheduled to replace L3, with L3 replacing L2. L2 will consequently be raised to a graveyard orbit. This will give Western Europe the first reliable xRIT in a few years.
+> Elektro-L N°2 is currently transmitting GGAK even though L3 is active in the same slot, making it unreliable for dish alignment for L3. Use L3's xRIT carrier/data to align instead. It is expected to be shut down soon.
 
 
-Signal-specific notes:
+Some signal-specific notes:
 
 - **LRIT**:
    - LRIT broadcasts pre-equalized channels, which often end up severely over-exposing the imagery. The reason why imagery is broadcasted like this is explained [here](#lrit-explanation).
    - After a few minutes of LRIT from Elektro-L3, you will be able to notice a spiky signal appear at 1690.5 MHz, this is linearly polarized empty LRIT from the neighboring satellite FengYun 2H. It might interfere with Elektro LRIT reception, in which case you should point slightly farther from 2H or skew your feed/dish to minimize it.
    - **Elektro-L4 has broadcast issues; the LRIT broadcast consistently cuts off after 15 minutes, even when in the middle of transmitting an image.**
 - **GGAK**:
-   - You can use GGAK as a 24/7 metric to see if you should be capable of decoding xRIT: 10 dB on GGAK should equal to about 2.5 dB on LRIT (enough for a decode), 17 dB on GGAK should equal to about 3 dB on HRIT (enough for a decode).
    - GGAK gets significantly weaker while an xRIT transmission is in progress.
-   - Elektro-L2 also transmits GGAK, but the strength seems inconsistent when compared to its contemporaries. It used to be a tad weaker, now it appears to be significantly stronger.
-   - GGAK has a very low symbol rate, you might have difficulties getting the pipeline to lock. If you have trouble doing so:
+   - GGAK has a very low symbol rate, you might have difficulties getting the pipeline to lock. This was fixed in SatDump 2.0 for the most part, but you should still follow these steps if it doesn't lock straight away:
        1. Your SDR likely has a small <abbr title="The oscillator your SDR has isn't perfectly accurate which can cause a very small offset from the frequency you tuned to. For example, signals might be shifted by 3 KHz: what the SDR shows as 100 MHz might be 100.003 MHz in reality.">reference inaccuracy</abbr>, decimate and tune until the GGAK signal is centered. Add this offset to the next steps.
        2. Set frequency offset to 50 kHz + the reference inaccuracy (Explained above) if your SDR has one, shift that much above 1693 MHz
        3. Start the pipeline
@@ -308,14 +309,17 @@ Signal-specific notes:
 ### FengYun
 
 #### FengYun 2 series
-- **FengYun 2H**, and **FengYun 2G** broadcast a **linearly polarized S-VISSR** signal containing 5 channels (1 visible, 4 infrared) at a fairly high quality - 1.25 km/px for the singular VIS channel and 5 km/px for the 4 IR channels.
+
+> !!NOTE!! FengYun-2G has been **DECOMMISSIONED** as of October 2026.
+
+- **FengYun 2H** currently broadcasts **linearly polarized S-VISSR** signal containing 5 channels (1 visible, 4 infrared) at a fairly high quality - 1.25 km/px for the singular VIS channel and 5 km/px for the 4 IR channels.
 - This signal is very prone to corruption because of lacking FEC, which often causes misplaced/missing lines. You can use [HRPTEgor's S-VISSR corrector](https://github.com/Foxiks/fengyun2-svissr-corrector) instead of the default `FengYun 2 S-VISSR` pipeline to remedy this.
-- FengYun 2H broadcasts dead (empty) LRIT every 3 hours starting at 00:48Z on 1690.5 MHz, this leads to the second image being cut at about 57%.
-- During the eclipse season (near equinoxes), these satellites lose track of the sun and end up not transmitting any imagery 17:00Z-19-00Z. The transmission might be off, or a jumpy S-VISSR signal with no data might be present instead.
+- The satellite transmits dead (empty) LRIT every 3 hours starting at 00:48Z on 1690.5 MHz, this leads to the second image being cut at about 57%.
+- During the eclipse season (near equinoxes), this series of satellites lose track of the sun and end up not transmitting any imagery 17:00Z-19-00Z. The transmission might be off, or a jumpy S-VISSR signal with no data might be present instead.
 
-> Reception note: FengYun 2H has been experiencing issues with the power amplifier, causing significant fluctuations in SNR. Usually they clear up in a few minutes, but the broadcast strength end up being below nominal for a while after. As of late, this has been prevalent around 21:00 UTC.
+> !!Important reception note!! - FengYun-2H has been experiencing significant power fluctuations as of late, often experiencing a drop upwards of 10 dB within a single image. The drop gets exponentially worse then returns back to its original strength a minute or two later. The satellite is also generally much weaker than usual, around 5 dB compared to values from 2025. The issue was reported to satellite operators but there hasn't been any updates so far. Expect degraded imagery from this satellite.
 
-> These satellites also broadcast a very weak **CDAS** raw downlink, but it's almost completely undocumented owing to its weak & wide nature. It is present just left S-VISSR, the satellite uses the same transmitter as S-VISSR to transmit it albeit at a significantly higher symbol rate to instantly transmit the whole scan line in real time. This is the reason why S-VISSR is so jumpy.
+> The satellite also broadcasts a very weak **CDAS** raw downlink, but it's almost completely undocumented owing to its weak & wide nature. It is present just left S-VISSR. Notably, it uses the same transmitter as S-VISSR to transmit the full scan line in a much higher symbol rate, the ground station then *stretches* it to be sent down at a lower symbol rate in S-VISSR. That's what the 'S' in 'S-VISSR' stands for! This is also the reason why S-VISSR is so jumpy.
 
 - Full resolution sample imagery:
     - [False color crop](https://sat-archive.metislair.com/L-band/FengYun-2/FengYun-2H/2025-02-16_13-44_fengyun-svissr_Meti/FY-2x_FC_20250216T134450Z.png)
@@ -331,12 +335,11 @@ Signal-specific notes:
 #### FengYun 4 series
 ***! WARNING ! - I can't confirm the status of either of these, if you have any information about it please let me know using the contacts at the bottom of this page. The satellites seem to intermittently cease broadcasts, rarely transmit any imagery.***
 
-> Latest updates:
->   - 10/1/2025: No visible broadcast from FengYun 4B
->   - 15/04/2025: LRIT without imagery enabled on FengYun 4A, HRIT not checked
+> !!Note!! FengYun-4A has been **DECOMMISSIONED** as of October 2026.
 
-- **FengYun 4A**, **FengYun 4B**, and **FengYun 4C** currently broadcast **linearly polarized LRIT** and **HRIT** signals. The LRIT signal only broadcasts at a very poor quality (Have to confirm, but less than 4 km/px), HRIT only transmits a single unencrypted infrared channel.
+- **FengYun 4B** and **FengYun 4C** currently broadcast **linearly polarized LRIT** and **HRIT** signals. The LRIT signal only broadcasts at a very poor quality (Have to confirm, but less than 4 km/px), HRIT only transmits a single unencrypted infrared channel.
 - This satellite series has been shrouded in mystery, with both satellites having transmitted xRIT in the past albeit without any live imagery. These broadcasts have intermittently stopped without any acknowledgement from NSMC (Satellite operators).
+- As of writing this (11/2026), it is unlikely that the broadcasts contain any unencrypted imagery.
 
 
 - Full resolution sample imagery:
@@ -427,17 +430,16 @@ All signals listed below are RHCP!
 |EWS-G|GVAR|1685.7 MHz|2.11 Msym/s|Linear|100 cm\*|No|Full disc image at midnight UTC, every 3 hours onwards. Regional crops every 15 minutes rest of the time.
 |EWS-G|Imager SD|1676 MHz|2.62 Msym/s|Linear|300 cm|No|Constantly
 |EWS-G|Sounder SD|1676 MHz|40 ksym/s|Linear|125 cm|No|Constantly
-|FengYun 2|S-VISSR|1687.5 MHz|660 ksym/s|Linear|60 cm\*|No|XX:00 - XX:28, second time slot variable\*\*
-|FengYun 4|LRIT|1697 MHz|90 ksym/s|Linear|60 cm|Yes|Hourly
-|FengYun 4|HRIT|1681 MHz|1 Msym/s|Linear|150 cm|Yes|Every half an hour
-|GEO-KOMPSAT|LRIT|1692.14 MHz|128 ksym/s|Linear|None\*\*\*|Yes|Constantly, image every 10 minutes
+|FengYun 2|S-VISSR|1687.5 MHz|660 ksym/s|Linear|60 cm\*|No|XX:00 - XX:28, 5:30-5:58 UTC and every 6 hours after and XX:30-XX:48 at all other times.
+|FengYun 4|LRIT|1697 MHz|90 ksym/s|Linear|60 cm|Yes|?
+|FengYun 4|HRIT|1681 MHz|1 Msym/s|Linear|150 cm|Yes|?
+|GEO-KOMPSAT|LRIT|1692.14 MHz|128 ksym/s|Linear|None\*\*|Yes|Constantly, image every 10 minutes
 |GEO-KOMPSAT|HRIT|1695.4 MHz|3 Msym/s|Linear|175 cm|Yes|Constantly, image every 10 minutes
-|Meteosat Second Generation|PGS|1686.83 MHz|3.75 Msym/s|Linear|300 cm\*\*\*\*|Yes|Constantly, image every 15 minutes in HRV and FES modes and every 5 minutes in RSS mode|
+|Meteosat Second Generation|PGS|1686.83 MHz|3.75 Msym/s|Linear|300 cm\*\*\*|Yes|Constantly, image every 15 minutes in HRV and FES modes and every 5 minutes in RSS mode|
 
 \* Only with the respective corrector, the image will otherwise be severely cut up. <br>
-\*\* **FengYun 2H:** 5:30-5:58 UTC and every 6 hours after, XX:30-XX:48 at all other times | **FengYun 2G:** 01:30-01:58 UTC and every 4 hours after <br>
-\*\*\* LRIT is notoriously strong, just pointing a feed at the satellite is often enough to decode products. <br>
-\*\*\*\* Only tested using a custom LNA such as a [G4DDK VLNA](https://www.g4ddk.com/VLNASept13.pdf).
+\*\* LRIT is notoriously strong, just pointing a feed at the satellite is often enough to decode products. <br>
+\*\*\* Only tested using a custom LNA such as a [G4DDK VLNA](https://www.g4ddk.com/VLNASept13.pdf).
 
 
 ## Symbol and sampling rate relation
