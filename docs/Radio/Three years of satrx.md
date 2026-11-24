@@ -1178,10 +1178,6 @@ Even though the future is uncertain, I am incredibly grateful for the 3 years I 
 
 Here's to another year of fun.
 
-> "Dance through the darkness" <br>
-> \~ Jack Abbot, *The Pitt*
-
-
 # Epilogue
 
 I hope I didn't tire you out after this much rambling. Whether you read this out of curiosity or shared interests, I hope you took something away - this hobby is full of so many possible things to do; You can always find something to play around with. I hope you enjoyed, and will see you in a year (:
@@ -1191,6 +1187,12 @@ I hope I didn't tire you out after this much rambling. Whether you read this out
 ![Amsterdam at night](../../assets/images/three-years-of-satrx/finishing-remark.jpg) <br>
 *The very aesthetically pleasing spot where I finished this post up. In total, it took about 25 hours of work.*
 
+---
+
 If you have any questions or remarks, feel free to forward them to me on Twitter (@Meti172172) or on Discord (@Meti172).
+
+> "Dance through the darkness" <br>
+> \~ Jack Abbot, *The Pitt*
+
 
 o7
