@@ -6,7 +6,10 @@ parent: Radio
 ---
 
 # Preamble
+
 This page will describe how I made a helix to receive satellites without a dish, along with its results. If you're only here for those, you can skip to them [here](#more-results)
+
+This article was written in 2025, I made a revised version in 2026 accessible [here]({{site.baseurl}}/docs/Radio/Improving the direct reception helix.html)
 
 # The idea
 Ever since I first started receiving L-band satellites, I dreamed of being able to do it on the fly. My backyard has a lot of trees during summer months that cover up to 10° both North and South, I have several spots with horizon-to-horizon coverage a few kilometers away, but cycling the distance isn't happening with a satellite dish. My ultimate goal with this project was to be able to receive Elektro-L3 LRIT from such spots, something claimed impossible by everybody I talked to about it.
@@ -86,4 +89,4 @@ Having successfully gotten L3 LRIT without a dish at such a low elevation, my dr
 ![NOAA 19 NC composite](../../assets/images/Direct-reception-helix/N19_01-04-2025_08-21.jpg) <br>
 *NOAA 19 received on 29/03/2025 with an 8 turn helix and Sawbird+ GOES. Processed using Satdump with the `Natural Color` composite, equalized. 40% quality lossy JPEG compression applied, full resolution image can be viewed [here](https://static.metislair.com/direct-rx-helix/N19_01-04-2025_08-21.png)*
 
-These images are the result of a few days of effort, acted like a proof of concept. I've since revisited this design, making an updated, more portable version which you can find described [here]({{site.baseurl}}/docs/Radio/Improving the direct reception helix.html)
+These images are the result of a few days of effort, should act like a proof of concept.

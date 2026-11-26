@@ -7,7 +7,7 @@ parent: Radio
 
 # Preamble
 
-> NOTE: The last time I updated this guide was in 04/2024, a **lot** has happened since, and I now know that a lot of what is said here might not necessarily be true. Take any stuff with a grain of salt! I decided to preserve this file as-is for memory's sake.
+> NOTE: The last time I updated this article was in 04/2024, a **lot** has happened since, and I now know that a lot of what is said here might not necessarily be true. Take any stuff with a grain of salt! I decided to preserve this file as-is for memory's sake.
 
 This file will describe the journey I took while falling down the radio rabbit hole - the highs and lows and everything in-between. Why you would want to read this? I got no bloody idea. I guess it might be fun seeing, what the modern satellite reception experience is like. At the very least, this page will act as an archive of what I have done.
 
